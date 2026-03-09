@@ -100,7 +100,7 @@ Talking points — use these as ingredients. Weave them naturally. Do NOT list t
 Draft a {format_} post for this community now."""
 
     message = client.messages.create(
-        model="claude-sonnet-4-6",
+        model="claude-3-5-sonnet-20241022",
         max_tokens=800,
         messages=[{"role": "user", "content": user_prompt}],
         system=SYSTEM_PROMPT,
