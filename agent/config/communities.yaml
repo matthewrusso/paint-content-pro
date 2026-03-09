@@ -1,0 +1,155 @@
+# Paint Color Pro — Community Configuration
+# Fill in your join_date (YYYY-MM-DD) when you join each community.
+# The agent uses join_date to calculate tenure and pick the right funnel stage:
+#   0-2 weeks:  pure-value only
+#   2-4 weeks:  pure-value + soft-mention (80/20 weighted)
+#   4+ weeks:   pure-value + soft-mention + direct-promotion (rare)
+#
+# rules: [] = normal, [no-promo] = pure-value only regardless of tenure
+# audience: OWNER | HOMEOWNER | ADJACENT
+
+communities:
+
+  # ── Reddit ────────────────────────────────────────────────────────────────
+
+  - platform: reddit
+    name: "r/Paintingbusiness"
+    audience: OWNER
+    join_date: null        # Set this when you join: "2026-03-07"
+    priority: A
+    rules: []
+
+  - platform: reddit
+    name: "r/paint"
+    audience: HOMEOWNER
+    join_date: null
+    priority: A
+    rules: [no-promo]     # Strict no-promo community
+
+  - platform: reddit
+    name: "r/Housepainting101"
+    audience: HOMEOWNER
+    join_date: null
+    priority: A
+    rules: [no-promo]     # Strict no-promo community
+
+  - platform: reddit
+    name: "r/sweatystartup"
+    audience: OWNER
+    join_date: null
+    priority: B
+    rules: []
+
+  - platform: reddit
+    name: "r/smallbusiness"
+    audience: OWNER
+    join_date: null
+    priority: B
+    rules: []
+
+  - platform: reddit
+    name: "r/Entrepreneur"
+    audience: OWNER
+    join_date: null
+    priority: B
+    rules: []
+
+  - platform: reddit
+    name: "r/SaaS"
+    audience: ADJACENT
+    join_date: null
+    priority: A
+    rules: []             # SaaS communities allow direct-promotion
+
+  - platform: reddit
+    name: "r/microsaas"
+    audience: ADJACENT
+    join_date: null
+    priority: A
+    rules: []
+
+  - platform: reddit
+    name: "r/indiehackers"
+    audience: ADJACENT
+    join_date: null
+    priority: A
+    rules: []
+
+  - platform: reddit
+    name: "r/InteriorDesign"
+    audience: HOMEOWNER
+    join_date: null
+    priority: B
+    rules: []
+
+  - platform: reddit
+    name: "r/HomeImprovement"
+    audience: HOMEOWNER
+    join_date: null
+    priority: B
+    rules: []
+
+  - platform: reddit
+    name: "r/DIY"
+    audience: HOMEOWNER
+    join_date: null
+    priority: C
+    rules: []
+
+  # ── Facebook ──────────────────────────────────────────────────────────────
+
+  - platform: facebook
+    name: "Painting Contractors by DripJobs"
+    audience: OWNER
+    join_date: null
+    priority: A
+    rules: []
+
+  - platform: facebook
+    name: "Painter Nation"
+    audience: OWNER
+    join_date: null
+    priority: A
+    rules: []
+
+  - platform: facebook
+    name: "Painters Helping Painters"
+    audience: OWNER
+    join_date: null
+    priority: A
+    rules: []
+
+  - platform: facebook
+    name: "Painting Business Pro"
+    audience: OWNER
+    join_date: null
+    priority: A
+    rules: []
+
+  - platform: facebook
+    name: "Painting Business Brainiacs"
+    audience: OWNER
+    join_date: null
+    priority: B
+    rules: []
+
+  - platform: facebook
+    name: "Painter Growth Secrets"
+    audience: OWNER
+    join_date: null
+    priority: B
+    rules: []
+
+  - platform: facebook
+    name: "Interior Design Community"
+    audience: HOMEOWNER
+    join_date: null
+    priority: B
+    rules: []
+
+  - platform: facebook
+    name: "Home Renovation & Design Ideas"
+    audience: HOMEOWNER
+    join_date: null
+    priority: B
+    rules: []

@@ -1,0 +1,24 @@
+# Environment
+agent/.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+agent/Scripts/
+agent/Lib/
+agent/Include/
+agent/pyvenv.cfg
+*.egg-info/
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PCP Draft Queue</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0f0f11;
+      --surface: #1a1a1f;
+      --surface2: #222228;
+      --border: #2e2e38;
+      --text: #e8e8f0;
+      --text-muted: #7a7a90;
+      --accent: #6c63ff;
+      --accent-dim: #3d3880;
+      --green: #22c55e;
+      --green-dim: #14532d;
+      --red: #ef4444;
+      --red-dim: #7f1d1d;
+      --amber: #f59e0b;
+      --amber-dim: #78350f;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+      font-size: 15px;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    /* ── Header ──────────────────────────────────────────────────────────── */
+    header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 32px;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    header h1 {
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: -0.3px;
+      color: var(--text);
+    }
+
+    header .pill {
+      background: var(--accent-dim);
+      color: var(--accent);
+      border-radius: 20px;
+      padding: 2px 10px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    header nav {
+      margin-left: auto;
+      display: flex;
+      gap: 4px;
+    }
+
+    header nav a {
+      color: var(--text-muted);
+      text-decoration: none;
+      padding: 6px 14px;
+      border-radius: 6px;
+      font-size: 13px;
+      transition: background 0.15s;
+    }
+
+    header nav a:hover { background: var(--surface2); color: var(--text); }
+    header nav a.active { background: var(--surface2); color: var(--text); }
+
+    /* ── Stats bar ───────────────────────────────────────────────────────── */
+    .stats {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 10px 32px;
+      display: flex;
+      gap: 32px;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    .stats span { display: flex; align-items: center; gap: 6px; }
+    .stats .dot { width: 8px; height: 8px; border-radius: 50%; }
+    .dot-pending  { background: var(--amber); }
+    .dot-approved { background: var(--green); }
+    .dot-rejected { background: var(--red); }
+
+    /* ── Main layout ─────────────────────────────────────────────────────── */
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 32px 16px;
+    }
+
+    .empty-state {
+      text-align: center;
+      padding: 80px 0;
+      color: var(--text-muted);
+    }
+
+    .empty-state .icon { font-size: 48px; margin-bottom: 12px; }
+    .empty-state h2 { font-size: 18px; margin-bottom: 6px; color: var(--text); }
+
+    /* ── Draft card ──────────────────────────────────────────────────────── */
+    .draft-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      margin-bottom: 24px;
+      overflow: hidden;
+      transition: border-color 0.15s;
+    }
+
+    .draft-card:hover { border-color: #444458; }
+
+    .draft-card.approved { border-color: var(--green-dim); }
+    .draft-card.rejected { border-color: var(--red-dim); opacity: 0.7; }
+
+    .card-header {
+      padding: 14px 20px;
+      background: var(--surface2);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .badge {
+      border-radius: 6px;
+      padding: 2px 8px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+      text-transform: uppercase;
+    }
+
+    .badge-platform-reddit   { background: #ff4500; color: white; }
+    .badge-platform-facebook { background: #1877f2; color: white; }
+
+    .badge-funnel-pure-value      { background: var(--surface); color: var(--green); border: 1px solid var(--green-dim); }
+    .badge-funnel-soft-mention    { background: var(--surface); color: var(--amber); border: 1px solid var(--amber-dim); }
+    .badge-funnel-direct-promotion{ background: var(--surface); color: #f87171; border: 1px solid var(--red-dim); }
+
+    .badge-format { background: var(--surface); color: var(--text-muted); border: 1px solid var(--border); }
+    .badge-status-approved { background: var(--green-dim); color: var(--green); }
+    .badge-status-rejected { background: var(--red-dim); color: var(--red); }
+
+    .community-name {
+      font-weight: 600;
+      font-size: 14px;
+      color: var(--text);
+    }
+
+    .card-meta {
+      margin-left: auto;
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    .topic-title {
+      padding: 12px 20px 0;
+      font-size: 12px;
+      color: var(--text-muted);
+      font-style: italic;
+    }
+
+    /* ── Draft textarea ──────────────────────────────────────────────────── */
+    .draft-body {
+      padding: 16px 20px;
+    }
+
+    .draft-text {
+      width: 100%;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      color: var(--text);
+      font-family: inherit;
+      font-size: 14px;
+      line-height: 1.7;
+      padding: 14px 16px;
+      resize: vertical;
+      min-height: 140px;
+      transition: border-color 0.15s;
+    }
+
+    .draft-text:focus {
+      outline: none;
+      border-color: var(--accent);
+    }
+
+    .draft-text[readonly] {
+      opacity: 0.75;
+      cursor: default;
+    }
+
+    /* ── Action row ──────────────────────────────────────────────────────── */
+    .card-actions {
+      padding: 12px 20px 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      border: none;
+      border-radius: 7px;
+      padding: 8px 18px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: opacity 0.15s, transform 0.1s;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .btn:active { transform: scale(0.97); }
+    .btn:hover  { opacity: 0.88; }
+
+    .btn-approve { background: var(--green); color: white; }
+    .btn-reject  { background: var(--red-dim); color: var(--red); border: 1px solid var(--red-dim); }
+    .btn-edit    { background: var(--surface2); color: var(--text); border: 1px solid var(--border); }
+
+    .reject-section {
+      display: none;
+      width: 100%;
+      margin-top: 8px;
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .reject-section input {
+      flex: 1;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      color: var(--text);
+      font-size: 13px;
+      padding: 7px 12px;
+    }
+
+    .reject-section input:focus { outline: none; border-color: var(--red); }
+
+    .rejection-reason {
+      padding: 8px 20px 14px;
+      font-size: 13px;
+      color: var(--red);
+    }
+
+    /* ── History view ────────────────────────────────────────────────────── */
+    .history-info {
+      font-size: 12px;
+      color: var(--text-muted);
+      padding: 10px 20px 0;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>PCP Draft Queue</h1>
+  {% if view == "pending" and summary.pending > 0 %}
+    <span class="pill">{{ summary.pending }} pending</span>
+  {% endif %}
+  <nav>
+    <a href="/" class="{{ 'active' if view == 'pending' }}">Queue</a>
+    <a href="/history" class="{{ 'active' if view == 'history' }}">History</a>
+  </nav>
+</header>
+
+<div class="stats">
+  <span><span class="dot dot-pending"></span> {{ summary.pending }} pending</span>
+  <span><span class="dot dot-approved"></span> {{ summary.approved }} approved</span>
+  <span><span class="dot dot-rejected"></span> {{ summary.rejected }} rejected</span>
+</div>
+
+<main>
+
+  {% if not drafts %}
+    <div class="empty-state">
+      <div class="icon">{% if view == 'pending' %}✓{% else %}📋{% endif %}</div>
+      <h2>{% if view == 'pending' %}Nothing to review{% else %}No history yet{% endif %}</h2>
+      <p>{% if view == 'pending' %}Run <code>python agent.py draft --community "..."</code> to generate posts.{% else %}Approved and rejected drafts will appear here.{% endif %}</p>
+    </div>
+  {% endif %}
+
+  {% for draft in drafts %}
+  <div class="draft-card {{ draft.status if view == 'history' else '' }}" id="card-{{ draft.id }}">
+
+    <div class="card-header">
+      <span class="badge badge-platform-{{ draft.platform }}">{{ draft.platform }}</span>
+      <span class="community-name">{{ draft.community }}</span>
+      <span class="badge badge-funnel-{{ draft.funnel | replace(' ', '-') | replace('_', '-') }}">{{ draft.funnel }}</span>
+      <span class="badge badge-format">{{ draft.format }}</span>
+      {% if view == 'history' %}
+        <span class="badge badge-status-{{ draft.status }}">{{ draft.status }}</span>
+      {% endif %}
+      <span class="card-meta">{{ draft.generated_at }}</span>
+    </div>
+
+    {% if draft.topic_title %}
+    <div class="topic-title">Topic: {{ draft.topic_title }}</div>
+    {% endif %}
+
+    <div class="draft-body">
+      {% if view == 'pending' %}
+      <textarea class="draft-text" name="draft_text" form="approve-{{ draft.id }}" id="text-{{ draft.id }}">{{ draft.draft }}</textarea>
+      {% else %}
+      <textarea class="draft-text" readonly>{{ draft.draft }}</textarea>
+      {% endif %}
+    </div>
+
+    {% if view == 'pending' %}
+    <div class="card-actions">
+
+      <!-- Approve form (uses the shared textarea via form attribute) -->
+      <form method="POST" action="/approve/{{ draft.id }}" id="approve-{{ draft.id }}" style="display:contents">
+        <button type="submit" class="btn btn-approve">&#10003; Approve</button>
+      </form>
+
+      <!-- Reject toggle -->
+      <button type="button" class="btn btn-edit" onclick="toggleEdit('{{ draft.id }}')">Edit draft</button>
+      <button type="button" class="btn btn-reject" onclick="toggleReject('{{ draft.id }}')">&#10005; Reject</button>
+
+      <!-- Reject form (hidden until toggled) -->
+      <form method="POST" action="/reject/{{ draft.id }}" id="reject-form-{{ draft.id }}"
+            class="reject-section" style="display:none; width:100%; margin-top:8px;">
+        <input type="text" name="reason" placeholder="Reason (optional)" />
+        <button type="submit" class="btn btn-reject">Confirm reject</button>
+      </form>
+
+    </div>
+    {% endif %}
+
+    {% if view == 'history' and draft.rejection_reason %}
+    <div class="rejection-reason">Rejected: {{ draft.rejection_reason }}</div>
+    {% endif %}
+
+  </div>
+  {% endfor %}
+
+</main>
+
+<script>
+  function toggleReject(id) {
+    const form = document.getElementById('reject-form-' + id);
+    form.style.display = form.style.display === 'none' ? 'flex' : 'none';
+  }
+
+  function toggleEdit(id) {
+    const ta = document.getElementById('text-' + id);
+    const isReadonly = ta.hasAttribute('readonly');
+    if (isReadonly) {
+      ta.removeAttribute('readonly');
+      ta.focus();
+    } else {
+      ta.setAttribute('readonly', true);
+    }
+  }
+
+  // Auto-resize textareas on load
+  document.querySelectorAll('.draft-text').forEach(ta => {
+    ta.style.height = 'auto';
+    ta.style.height = (ta.scrollHeight + 4) + 'px';
+    ta.addEventListener('input', () => {
+      ta.style.height = 'auto';
+      ta.style.height = (ta.scrollHeight + 4) + 'px';
+    });
+  });
+</script>
+
+</body>
+</html>

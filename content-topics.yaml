@@ -1,0 +1,2005 @@
+# Paint Color Pro — Content Topic Database
+# Last updated: 2026-03-07
+# Schema docs: content-schema.md
+#
+# Usage: Future agent reads this file, filters by audience/cluster/status,
+# selects a topic, and drafts content for the specified communities.
+# See content-schema.md for field definitions and selection rules.
+
+topics:
+
+  # ============================================================
+  # CLUSTER: color-consultation-pain (OWNER)
+  # ============================================================
+
+  - id: "owner-ccp-001"
+    title: "How many hours a week do you spend on color consultations?"
+    audience: "OWNER"
+    cluster: "color-consultation-pain"
+    format: "question"
+    funnel: "pure-value"
+    communities:
+      - { platform: "reddit", name: "r/Paintingbusiness", priority: "A" }
+      - { platform: "reddit", name: "r/paint", priority: "B" }
+      - { platform: "facebook", name: "Painting Contractors by DripJobs", priority: "A" }
+      - { platform: "facebook", name: "Painter Nation", priority: "B" }
+    pain_point: "time-waste"
+    talking_points:
+      - "I tracked my time last month and realized I spent 14 hours just on color meetings — that's almost 2 full days of billable work gone"
+      - "Between driving to the home, fanning out 30 swatches, and waiting for the spouse to weigh in, a single color consultation eats 60-90 minutes minimum"
+      - "Curious what other owners are seeing — is this just part of the job or has anyone found a way to cut this down?"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+
+  - id: "owner-ccp-002"
+    title: "The client who changed their mind 4 times after we already started painting"
+    audience: "OWNER"
+    cluster: "color-consultation-pain"
+    format: "story"
+    funnel: "pure-value"
+    communities:
+      - { platform: "reddit", name: "r/Paintingbusiness", priority: "A" }
+      - { platform: "reddit", name: "r/Housepainting101", priority: "B" }
+      - { platform: "facebook", name: "Painters Helping Painters", priority: "A" }
+      - { platform: "facebook", name: "Painting Business Pro", priority: "B" }
+    pain_point: "homeowner-indecision"
+    talking_points:
+      - "Exterior repaint, client picked SW Agreeable Gray, we prepped and sprayed the first coat. Got a text that night: 'Actually can we do Accessible Beige?' — that was change #1"
+      - "By change #3 I had $1,800 in extra paint costs and 2 days of labor I couldn't bill for because my contract didn't have a color change clause"
+      - "Now I charge a $350 color change fee after the first coat goes on and I make them sign off on the final color in writing before we load the sprayer"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+
+  - id: "owner-ccp-003"
+    title: "Anyone else dread the 'can you bring more samples' callback?"
+    audience: "OWNER"
+    cluster: "color-consultation-pain"
+    format: "question"
+    funnel: "pure-value"
+    communities:
+      - { platform: "reddit", name: "r/Paintingbusiness", priority: "A" }
+      - { platform: "reddit", name: "r/paint", priority: "A" }
+      - { platform: "facebook", name: "Painter Nation", priority: "B" }
+      - { platform: "facebook", name: "Painting Business Brainiacs", priority: "B" }
+    pain_point: "homeowner-indecision"
+    talking_points:
+      - "I had 3 callbacks last week alone — each one is 30-45 min of drive time plus the samples I'm eating the cost on"
+      - "The worst is when they say 'I want something between these two' and you already know they're going to hate whatever you bring next"
+      - "I started limiting color consultations to 2 visits max and charging $75 after that — has anyone else set boundaries like this?"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+
+  - id: "owner-ccp-004"
+    title: "We cut color consultation time from 60 min to about 10 by letting clients preview colors before we show up"
+    audience: "OWNER"
+    cluster: "color-consultation-pain"
+    format: "story"
+    funnel: "soft-mention"
+    communities:
+      - { platform: "reddit", name: "r/Paintingbusiness", priority: "A" }
+      - { platform: "reddit", name: "r/sweatystartup", priority: "B" }
+      - { platform: "facebook", name: "Painting Contractors by DripJobs", priority: "A" }
+      - { platform: "facebook", name: "Painter Growth Secrets", priority: "B" }
+    pain_point: "time-waste"
+    talking_points:
+      - "We added a color visualization tool to our website so homeowners can upload a photo of their house and try colors before we ever set foot on the property"
+      - "Now when I show up they've already narrowed it to 2-3 colors instead of starting from scratch with a fan deck — the whole consultation takes 10 minutes"
+      - "Saved us roughly 8 hours a week across 6-8 jobs, which translates to an extra $2,400/month in billable time we were previously giving away"
+    cta_if_any: "We started using a visualization tool on our website — happy to share what we use if anyone's interested"
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+
+  - id: "owner-ccp-005"
+    title: "One tip that eliminated 80% of our color change orders"
+    audience: "OWNER"
+    cluster: "color-consultation-pain"
+    format: "tip"
+    funnel: "pure-value"
+    communities:
+      - { platform: "reddit", name: "r/Paintingbusiness", priority: "A" }
+      - { platform: "reddit", name: "r/Construction", priority: "B" }
+      - { platform: "facebook", name: "Painting Business Pro", priority: "A" }
+      - { platform: "facebook", name: "Painters Helping Painters", priority: "B" }
+    pain_point: "homeowner-indecision"
+    talking_points:
+      - "We started doing large 2x2 ft brush-out samples on the actual wall in 3 different lighting conditions — morning, midday, and evening — and photographing each one for the client"
+      - "The key is making the homeowner sign a 'Color Confirmation Form' with the exact color code, sheen, and a photo before any paint gets ordered"
+      - "Since adding this step 6 months ago we've had exactly 2 change orders vs. the 8-10 we used to get per month — that's roughly $4,000 saved in wasted paint and labor"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+
+  - id: "owner-ccp-006"
+    title: "What do you do when both spouses show up and disagree on the color?"
+    audience: "OWNER"
+    cluster: "color-consultation-pain"
+    format: "question"
+    funnel: "pure-value"
+    communities:
+      - { platform: "reddit", name: "r/Paintingbusiness", priority: "A" }
+      - { platform: "reddit", name: "r/Housepainting101", priority: "B" }
+      - { platform: "facebook", name: "Painter Nation", priority: "A" }
+      - { platform: "facebook", name: "Painting Business Brainiacs", priority: "B" }
+    pain_point: "homeowner-indecision"
+    talking_points:
+      - "Had a consultation last Tuesday where the wife wanted navy blue and the husband wanted forest green for the front door — I stood there for 45 minutes while they debated"
+      - "I've started asking upfront 'Who is the final decision-maker on color?' but even that doesn't always work when both partners show up with strong opinions"
+      - "Some guys I know refuse to do the color meeting unless both decision-makers are present from the start — saves a second trip when the other spouse vetoes everything"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+
+  - id: "owner-ccp-007"
+    title: "Do you charge separately for color consultations or build it into the bid?"
+    audience: "OWNER"
+    cluster: "color-consultation-pain"
+    format: "reply-prompt"
+    funnel: "soft-mention"
+    communities:
+      - { platform: "reddit", name: "r/Paintingbusiness", priority: "A" }
+      - { platform: "reddit", name: "r/sweatystartup", priority: "B" }
+      - { platform: "facebook", name: "Painting Contractors by DripJobs", priority: "A" }
+      - { platform: "facebook", name: "Painters Helping Painters", priority: "B" }
+    pain_point: "time-waste"
+    talking_points:
+      - "I used to eat the cost of color meetings but after tracking it I was losing $200-400 per job in unbilled time between sample runs and consultation visits"
+      - "Started offering two options: free self-service color preview through a tool on our website, or a $150 in-person color consultation with a designer"
+      - "90% of clients now pick the free option and come to us with colors already chosen — the ones who pay $150 are the high-end clients who don't blink at it"
+    cta_if_any: "We put a visualization widget on our site that handles most of the color selection before we ever show up — game changer for cutting consultation costs"
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+
+  - id: "owner-ccp-008"
+    title: "Poll: What's your biggest time sink that isn't actual painting?"
+    audience: "OWNER"
+    cluster: "color-consultation-pain"
+    format: "poll"
+    funnel: "pure-value"
+    communities:
+      - { platform: "facebook", name: "Painting Contractors by DripJobs", priority: "A" }
+      - { platform: "facebook", name: "Painter Nation", priority: "A" }
+      - { platform: "facebook", name: "Painting Business Pro", priority: "B" }
+    pain_point: "time-waste"
+    talking_points:
+      - "Options: A) Color consultations and sample callbacks B) Estimating and quoting C) Client communication/follow-ups D) Sourcing materials E) Bookkeeping"
+      - "I'd bet color consultations are top 3 for most of us — I ran the numbers and it was my #1 non-painting time cost at 6-8 hours per week"
+      - "Whatever your answer is, I'm curious what you've done to reduce it — always looking for systems that buy back time"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+
+
+  # ============================================================
+  # CLUSTER: lead-capture (OWNER)
+  # ============================================================
+
+  - id: "owner-lc-001"
+    title: "Your painting website is getting traffic but zero leads — here's probably why"
+    audience: "OWNER"
+    cluster: "lead-capture"
+    format: "tip"
+    funnel: "pure-value"
+    communities:
+      - { platform: "reddit", name: "r/Paintingbusiness", priority: "A" }
+      - { platform: "reddit", name: "r/LeadGeneration", priority: "A" }
+      - { platform: "reddit", name: "r/sweatystartup", priority: "B" }
+      - { platform: "facebook", name: "Painter Marketing Mastermind", priority: "A" }
+    pain_point: "no-lead-capture"
+    talking_points:
+      - "Most painter websites have zero interactive elements — just a phone number and a contact form that 90% of visitors won't fill out because they're browsing at 10pm"
+      - "The fix: give visitors something to DO on your site. A color visualizer, a quick estimate calculator, a photo gallery they can filter by room — anything that keeps them engaged and captures their email"
+      - "We went from 3 website leads/month to 15 by adding an interactive element that gave visitors a reason to enter their info beyond 'request a quote'"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+
+  - id: "owner-lc-002"
+    title: "How are you capturing leads from your website outside of business hours?"
+    audience: "OWNER"
+    cluster: "lead-capture"
+    format: "question"
+    funnel: "pure-value"
+    communities:
+      - { platform: "reddit", name: "r/Paintingbusiness", priority: "A" }
+      - { platform: "reddit", name: "r/LeadGeneration", priority: "A" }
+      - { platform: "facebook", name: "Painting Contractors by DripJobs", priority: "A" }
+      - { platform: "facebook", name: "Painter Growth Secrets", priority: "B" }
+    pain_point: "no-lead-capture"
+    talking_points:
+      - "Google Analytics shows 60% of our website visits happen between 7pm and midnight — when nobody's answering the phone"
+      - "A contact form alone isn't cutting it. Most homeowners won't fill out a form at 10pm, they'll just bounce to the next painter on Google"
+      - "Looking for ideas beyond chatbots — what's actually working for you guys to capture after-hours leads that aren't just tire kickers?"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+
+  - id: "owner-lc-003"
+    title: "How we turned our website from a digital business card into our #1 lead source"
+    audience: "OWNER"
+    cluster: "lead-capture"
+    format: "story"
+    funnel: "soft-mention"
+    communities:
+      - { platform: "reddit", name: "r/Paintingbusiness", priority: "A" }
+      - { platform: "reddit", name: "r/sweatystartup", priority: "B" }
+      - { platform: "facebook", name: "Painter Marketing Mastermind", priority: "A" }
+      - { platform: "facebook", name: "Painter Growth Secrets", priority: "B" }
+    pain_point: "no-lead-capture"
+    talking_points:
+      - "For 3 years our website was basically a brochure — logo, services list, phone number, contact form. We got maybe 2-3 leads a month from it"
+      - "We added a color visualization widget that lets visitors upload a photo of their home and try paint colors — they enter their email to save their project and we get the lead automatically"
+      - "Went from 3 leads/month to 18 leads/month in 90 days. The leads are also higher quality because they've already picked colors and are serious about painting"
+    cta_if_any: "We started using a visualization tool embedded on our website — the leads basically capture themselves"
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+
+  - id: "owner-lc-004"
+    title: "5 things every painting contractor website needs to actually generate leads"
+    audience: "OWNER"
+    cluster: "lead-capture"
+    format: "guide"
+    funnel: "pure-value"
+    communities:
+      - { platform: "reddit", name: "r/Paintingbusiness", priority: "A" }
+      - { platform: "reddit", name: "r/LeadGeneration", priority: "B" }
+      - { platform: "reddit", name: "r/smallbusiness", priority: "B" }
+      - { platform: "facebook", name: "Painter Marketing Mastermind", priority: "A" }
+    pain_point: "no-lead-capture"
+    talking_points:
+      - "1) Above-the-fold CTA that isn't just 'Contact Us' — try 'See What Your Home Looks Like in a New Color' or 'Get Your Free Estimate in 60 Seconds'"
+      - "2) Before/after gallery with location tags for local SEO. 3) Google reviews widget embedded on the homepage. 4) An interactive tool that gives visitors a reason to enter their email"
+      - "5) Speed-to-lead system — if someone fills out a form at 9pm, they get an automated text within 2 minutes. First painter to respond wins 78% of the time"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+
+  - id: "owner-lc-005"
+    title: "Stop paying $50+ per lead on Angi — here's how to generate your own for under $5"
+    audience: "OWNER"
+    cluster: "lead-capture"
+    format: "tip"
+    funnel: "pure-value"
+    communities:
+      - { platform: "reddit", name: "r/Paintingbusiness", priority: "A" }
+      - { platform: "reddit", name: "r/sweatystartup", priority: "A" }
+      - { platform: "reddit", name: "r/Entrepreneur", priority: "B" }
+      - { platform: "facebook", name: "Painting Business Pro", priority: "A" }
+    pain_point: "no-lead-capture"
+    talking_points:
+      - "Angi/HomeAdvisor leads cost $40-80 each and you're competing with 3-4 other painters on every single one — close rate is maybe 15-20%"
+      - "With a basic Google Ads campaign targeting '[city] house painter' + a website that actually captures leads, you can generate exclusive leads for $5-15 each"
+      - "The math: $500/month on Google Ads = ~50 exclusive leads vs. $500 on Angi = ~8 shared leads. Even if your close rate is the same, you're 6x ahead"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+
+  - id: "owner-lc-006"
+    title: "What's on your website that actually converts visitors into booked jobs?"
+    audience: "OWNER"
+    cluster: "lead-capture"
+    format: "question"
+    funnel: "pure-value"
+    communities:
+      - { platform: "reddit", name: "r/Paintingbusiness", priority: "A" }
+      - { platform: "facebook", name: "Painter Marketing Mastermind", priority: "A" }
+      - { platform: "facebook", name: "Painting Business Brainiacs", priority: "B" }
+      - { platform: "facebook", name: "Painter Growth Secrets", priority: "B" }
+    pain_point: "no-lead-capture"
+    talking_points:
+      - "Beyond the basics (gallery, reviews, contact form) — what have you added to your site that actually moved the needle on conversions?"
+      - "I've seen some guys add instant quote calculators, virtual color tools, and scheduling widgets. Curious what's actually worth the investment"
+      - "Our current site converts at about 2% — industry average is supposedly 3-5% for home services. Something's missing and I can't figure out what"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+
+  - id: "owner-lc-007"
+    title: "Just found PaintColorPro and it's been a game changer for website leads"
+    audience: "OWNER"
+    cluster: "lead-capture"
+    format: "reply-prompt"
+    funnel: "direct-promotion"
+    communities:
+      - { platform: "reddit", name: "r/Paintingbusiness", priority: "A" }
+      - { platform: "reddit", name: "r/LeadGeneration", priority: "B" }
+      - { platform: "facebook", name: "Painting Contractors by DripJobs", priority: "A" }
+      - { platform: "facebook", name: "Painter Growth Secrets", priority: "B" }
+    pain_point: "no-lead-capture"
+    talking_points:
+      - "Started using PaintColorPro about 2 months ago — it's a color visualization widget you embed on your website so homeowners can try colors on photos of their own home"
+      - "The lead capture is the killer feature: visitors enter their email to save their color project, and I get a notification with their info and the colors they picked. Went from 4 to 16 leads/month"
+      - "It's not free ($49-499/mo depending on your plan) but it paid for itself in the first week. Anyone else using it or something similar?"
+    cta_if_any: "Check out PaintColorPro if you're looking for a way to capture leads from your website — paintcolorpro.com"
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+
+
+  # ============================================================
+  # CLUSTER: business-professionalism (OWNER)
+  # ============================================================
+
+  - id: "owner-bp-001"
+    title: "What makes a homeowner pick you over the other 5 painters who quoted?"
+    audience: "OWNER"
+    cluster: "business-professionalism"
+    format: "question"
+    funnel: "pure-value"
+    communities:
+      - { platform: "reddit", name: "r/Paintingbusiness", priority: "A" }
+      - { platform: "reddit", name: "r/sweatystartup", priority: "B" }
+      - { platform: "facebook", name: "Painting Contractors by DripJobs", priority: "A" }
+      - { platform: "facebook", name: "Painter Nation", priority: "B" }
+    pain_point: "unprofessional-image"
+    talking_points:
+      - "Had a client tell me she got 6 quotes for her interior repaint and picked us because our proposal was the only one that looked professional — it had photos, a timeline, and a color mockup"
+      - "Most painters show up in a beat-up truck, scribble a number on a napkin estimate, and wonder why they lose to the guy who charges 30% more"
+      - "What are you doing to differentiate beyond price? Genuinely curious what's working in different markets"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+
+  - id: "owner-bp-002"
+    title: "Small upgrades that made our painting company look way more professional overnight"
+    audience: "OWNER"
+    cluster: "business-professionalism"
+    format: "tip"
+    funnel: "pure-value"
+    communities:
+      - { platform: "reddit", name: "r/Paintingbusiness", priority: "A" }
+      - { platform: "reddit", name: "r/sweatystartup", priority: "A" }
+      - { platform: "reddit", name: "r/EntrepreneurRideAlong", priority: "B" }
+      - { platform: "facebook", name: "Painting Business Pro", priority: "A" }
+    pain_point: "unprofessional-image"
+    talking_points:
+      - "Branded polo shirts ($15 each), vehicle magnets ($80), and a $200 website refresh took us from 'guy with a van' to 'legitimate painting company' in one weekend"
+      - "Started sending proposals as branded PDFs with before/after mockups instead of text-message quotes — close rate jumped from 25% to 40% in the first month"
+      - "The little things matter: showing up on time, shoe covers without being asked, a follow-up email after the estimate. Clients remember how you made them feel, not just your price"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+
+  - id: "owner-bp-003"
+    title: "Do clients ever comment on your website? Is it worth investing in?"
+    audience: "OWNER"
+    cluster: "business-professionalism"
+    format: "question"
+    funnel: "pure-value"
+    communities:
+      - { platform: "reddit", name: "r/Paintingbusiness", priority: "A" }
+      - { platform: "reddit", name: "r/smallbusiness", priority: "B" }
+      - { platform: "facebook", name: "Painter Marketing Mastermind", priority: "A" }
+      - { platform: "facebook", name: "Painting Business Brainiacs", priority: "B" }
+    pain_point: "unprofessional-image"
+    talking_points:
+      - "Had a $12,000 exterior job last month where the client said 'your website looked the most professional so I called you first' — didn't even get competing bids"
+      - "Meanwhile I know guys doing $500K+/year with just a Facebook page and word of mouth. Is a real website still necessary in 2026?"
+      - "If you've invested in your website, what specifically made the biggest difference — the gallery, reviews, online booking, interactive tools?"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+
+  - id: "owner-bp-004"
+    title: "The tech stack that took our painting business from $200K to $600K in 18 months"
+    audience: "OWNER"
+    cluster: "business-professionalism"
+    format: "tip"
+    funnel: "soft-mention"
+    communities:
+      - { platform: "reddit", name: "r/Paintingbusiness", priority: "A" }
+      - { platform: "reddit", name: "r/EntrepreneurRideAlong", priority: "A" }
+      - { platform: "reddit", name: "r/sweatystartup", priority: "B" }
+      - { platform: "facebook", name: "Painter Growth Secrets", priority: "A" }
+    pain_point: "unprofessional-image"
+    talking_points:
+      - "CRM (Jobber — $50/mo), automated follow-ups (Mailchimp — free tier), scheduling (Calendly — free), and a visualization widget on our website for lead capture"
+      - "Total tech spend is about $150/mo and it replaced a full-time office person we were paying $3,200/mo. Every lead gets followed up within 2 minutes automatically"
+      - "Clients regularly tell us we're the most organized painting company they've dealt with — that alone closes jobs over cheaper competitors"
+    cta_if_any: "We added a color visualization tool to our website that captures leads automatically — clients love playing with it and we get their info without lifting a finger"
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+
+  - id: "owner-bp-005"
+    title: "How a $12K job came down to who looked more legit online"
+    audience: "OWNER"
+    cluster: "business-professionalism"
+    format: "story"
+    funnel: "pure-value"
+    communities:
+      - { platform: "reddit", name: "r/Paintingbusiness", priority: "A" }
+      - { platform: "reddit", name: "r/smallbusiness", priority: "B" }
+      - { platform: "facebook", name: "Painter Nation", priority: "A" }
+      - { platform: "facebook", name: "Painting Business Pro", priority: "B" }
+    pain_point: "unprofessional-image"
+    talking_points:
+      - "Client told me she narrowed it to us and one other painter. Both bids were within $500. She Googled both companies and picked us because our online presence was more professional"
+      - "The other guy had a one-page website from 2018 with a blurry logo and a generic contact form. Ours had a portfolio, reviews, and an interactive color tool"
+      - "Your online presence is your first impression now. 85% of homeowners research contractors online before calling. If your website looks like 2015, you're losing jobs to the guy who invested $2,000 in his"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+
+  - id: "owner-bp-006"
+    title: "Poll: What's the #1 thing that makes a painting company look professional to clients?"
+    audience: "OWNER"
+    cluster: "business-professionalism"
+    format: "poll"
+    funnel: "pure-value"
+    communities:
+      - { platform: "facebook", name: "Painting Contractors by DripJobs", priority: "A" }
+      - { platform: "facebook", name: "Painter Nation", priority: "A" }
+      - { platform: "facebook", name: "Painters Helping Painters", priority: "B" }
+    pain_point: "unprofessional-image"
+    talking_points:
+      - "Options: A) Branded vehicles and uniforms B) Professional website with portfolio C) Fast, polished proposals D) Online reviews (50+) E) Modern tech (scheduling, visualizers, etc.)"
+      - "I'd argue it's the proposal — that's the moment they're deciding to give you $5K-$20K. A handwritten estimate on a notepad doesn't inspire confidence"
+      - "Curious where the group lands on this. What's gotten you the most 'wow, you guys are legit' reactions from clients?"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+
+  - id: "owner-bp-007"
+    title: "What's the one thing you'd tell a new painting business owner to invest in first?"
+    audience: "OWNER"
+    cluster: "business-professionalism"
+    format: "reply-prompt"
+    funnel: "pure-value"
+    communities:
+      - { platform: "reddit", name: "r/Paintingbusiness", priority: "A" }
+      - { platform: "reddit", name: "r/sweatystartup", priority: "A" }
+      - { platform: "reddit", name: "r/Entrepreneur", priority: "B" }
+      - { platform: "facebook", name: "Painting Business Brainiacs", priority: "A" }
+    pain_point: "unprofessional-image"
+    talking_points:
+      - "Not talking about brushes and sprayers — I mean the business side. Website? CRM? Vehicle wrap? Uniforms? What gives the best ROI in year one?"
+      - "When I started I spent $3K on a vehicle wrap before I even had a website — in hindsight the website would've generated more leads faster"
+      - "Drop your #1 recommendation below and roughly what it cost. Trying to build a priority list for newer painters in this group"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+
+
+  # ============================================================
+  # CLUSTER: pricing-estimating (OWNER)
+  # ============================================================
+
+  - id: "owner-pe-001"
+    title: "How are you handling price increases on paint without losing clients?"
+    audience: "OWNER"
+    cluster: "pricing-estimating"
+    format: "question"
+    funnel: "pure-value"
+    communities:
+      - { platform: "reddit", name: "r/Paintingbusiness", priority: "A" }
+      - { platform: "reddit", name: "r/paint", priority: "B" }
+      - { platform: "reddit", name: "r/Construction", priority: "B" }
+      - { platform: "facebook", name: "Painting Contractors by DripJobs", priority: "A" }
+    pain_point: "general"
+    talking_points:
+      - "SW raised prices again — a 5-gallon bucket of Duration that was $280 two years ago is now $340. That's an extra $200-400 per job I have to pass along"
+      - "Some clients push back when the bid is higher than their buddy got last year. I've started showing them a material cost breakdown so they see where the money goes"
+      - "Anyone using a flat materials markup (like 20%) or do you build paint cost into your per-square-foot rate? Trying to figure out the cleanest way to present this"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+
+  - id: "owner-pe-002"
+    title: "The estimating formula that finally made our bids consistent and profitable"
+    audience: "OWNER"
+    cluster: "pricing-estimating"
+    format: "tip"
+    funnel: "pure-value"
+    communities:
+      - { platform: "reddit", name: "r/Paintingbusiness", priority: "A" }
+      - { platform: "reddit", name: "r/sweatystartup", priority: "B" }
+      - { platform: "facebook", name: "Painting Business Pro", priority: "A" }
+      - { platform: "facebook", name: "Painters Helping Painters", priority: "B" }
+    pain_point: "general"
+    talking_points:
+      - "We use: (Labor hours x hourly rate) + (materials x 1.3 markup) + (15% overhead) + (20% profit margin). Took us 2 years to land on these numbers but they work"
+      - "The key was tracking actual hours on 50 jobs to build accurate production rates — e.g., we now know interior walls average 200 sq ft/hour for 2 coats with a roller"
+      - "Stopped eyeballing estimates and started measuring every room. Takes 30 min longer on the estimate but we haven't lost money on a job in 8 months"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+
+  - id: "owner-pe-003"
+    title: "How do you handle scope creep on painting jobs without burning the client relationship?"
+    audience: "OWNER"
+    cluster: "pricing-estimating"
+    format: "question"
+    funnel: "pure-value"
+    communities:
+      - { platform: "reddit", name: "r/Paintingbusiness", priority: "A" }
+      - { platform: "reddit", name: "r/Construction", priority: "A" }
+      - { platform: "facebook", name: "Painter Nation", priority: "A" }
+      - { platform: "facebook", name: "Painting Business Brainiacs", priority: "B" }
+    pain_point: "general"
+    talking_points:
+      - "'While you're here, can you also do the hallway?' — that innocent question has cost me thousands over the years when I said yes without adjusting the price"
+      - "Now I carry a change order form in my truck. Any addition gets written up with a price on the spot. Most clients respect it, some get annoyed, but I stopped working for free"
+      - "The worst scope creep is hidden damage — you bid a repaint and discover rotted trim, peeling layers, or wallpaper under paint. How do you handle that in your contracts?"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+
+  - id: "owner-pe-004"
+    title: "Guide: How to bid commercial painting jobs without leaving money on the table"
+    audience: "OWNER"
+    cluster: "pricing-estimating"
+    format: "guide"
+    funnel: "pure-value"
+    communities:
+      - { platform: "reddit", name: "r/Paintingbusiness", priority: "A" }
+      - { platform: "reddit", name: "r/Construction", priority: "A" }
+      - { platform: "facebook", name: "Painting Business Pro", priority: "A" }
+      - { platform: "facebook", name: "Painting Business Brainiacs", priority: "B" }
+    pain_point: "general"
+    talking_points:
+      - "Commercial is a different game: you're bidding per square foot, dealing with GC markups, and competing against 10+ painters. Our sweet spot is $0.75-1.50/sq ft for new construction depending on ceiling height and coats"
+      - "Always visit the site twice — once for measurements, once to check conditions. I've seen guys lose $10K on a commercial job because they didn't notice 12-ft ceilings in the plans"
+      - "Payment terms matter more than price on commercial. Net-30 from a GC often turns into Net-60. Build a 5% cash flow buffer into every commercial bid to cover the float"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+
+  - id: "owner-pe-005"
+    title: "How I lost $3,200 on a single exterior job — and the contract clause that prevents it now"
+    audience: "OWNER"
+    cluster: "pricing-estimating"
+    format: "story"
+    funnel: "pure-value"
+    communities:
+      - { platform: "reddit", name: "r/Paintingbusiness", priority: "A" }
+      - { platform: "reddit", name: "r/tradepainters", priority: "A" }
+      - { platform: "facebook", name: "Painters Helping Painters", priority: "A" }
+      - { platform: "facebook", name: "Painter Nation", priority: "B" }
+    pain_point: "general"
+    talking_points:
+      - "Bid a Victorian exterior at $8,500. Looked straightforward from the ground. Got up on the ladder and found 4 layers of peeling lead paint under the top coat — remediation added 3 days of labor"
+      - "My contract at the time didn't have an unknown conditions clause. Client refused to pay more, said 'you should have caught that.' Lesson: always include a clause for concealed conditions"
+      - "New contract language: 'Price assumes surfaces in condition observed during estimate. Hidden damage, lead paint, or structural issues discovered during work will be documented and billed at $65/hr plus materials with client approval before proceeding'"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+
+  - id: "owner-pe-006"
+    title: "What's your target profit margin on residential painting jobs?"
+    audience: "OWNER"
+    cluster: "pricing-estimating"
+    format: "reply-prompt"
+    funnel: "pure-value"
+    communities:
+      - { platform: "reddit", name: "r/Paintingbusiness", priority: "A" }
+      - { platform: "reddit", name: "r/sweatystartup", priority: "B" }
+      - { platform: "facebook", name: "Painting Contractors by DripJobs", priority: "A" }
+      - { platform: "facebook", name: "Painting Business Pro", priority: "B" }
+    pain_point: "general"
+    talking_points:
+      - "I aim for 35% gross margin on every residential job — that covers overhead (truck, insurance, marketing) and leaves about 15-18% net profit"
+      - "Some guys bid at 50%+ margin and close fewer jobs. Others bid at 20% and stay busy but can't grow. What's the sweet spot in your market?"
+      - "Drop your target margin and your market (HCOL/MCOL/LCOL) — I think geography plays a huge role in what you can charge"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+
+  - id: "owner-pe-007"
+    title: "Flat rate vs. time-and-materials: which do you use and why?"
+    audience: "OWNER"
+    cluster: "pricing-estimating"
+    format: "tip"
+    funnel: "pure-value"
+    communities:
+      - { platform: "reddit", name: "r/Paintingbusiness", priority: "A" }
+      - { platform: "reddit", name: "r/Construction", priority: "B" }
+      - { platform: "facebook", name: "Painting Business Brainiacs", priority: "A" }
+      - { platform: "facebook", name: "Painters Helping Painters", priority: "B" }
+    pain_point: "general"
+    talking_points:
+      - "We do flat rate for 90% of residential jobs — homeowners want a number they can budget for, and if your estimating is tight you make more money on the fast jobs"
+      - "T&M only for repairs, unknown-scope work, or when the client keeps changing their mind. We charge $65/hr per painter + materials at cost + 25%"
+      - "The hybrid approach: flat rate for the base scope, T&M for any additions. Client gets predictability, you get protected from scope creep. Put it in the contract upfront"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+
+
+  # ============================================================
+  # CLUSTER: hiring-scaling (OWNER)
+  # ============================================================
+
+  - id: "owner-hs-001"
+    title: "When did you hire your first employee and how did you know you were ready?"
+    audience: "OWNER"
+    cluster: "hiring-scaling"
+    format: "question"
+    funnel: "pure-value"
+    communities:
+      - { platform: "reddit", name: "r/Paintingbusiness", priority: "A" }
+      - { platform: "reddit", name: "r/sweatystartup", priority: "A" }
+      - { platform: "reddit", name: "r/Entrepreneur", priority: "B" }
+      - { platform: "facebook", name: "Painting Contractors by DripJobs", priority: "A" }
+    pain_point: "general"
+    talking_points:
+      - "I've been solo for 2 years doing $180K/year. I'm turning down 3-4 jobs a week and working 60-hour weeks. Every sign says hire, but the risk terrifies me"
+      - "The math I keep running: if I hire at $22/hr and bill at $55/hr, I make $33/hr on their labor minus overhead. But what if I can't keep them busy during slow months?"
+      - "For those who made the jump — did you hire before you had enough work to keep them busy, or did you wait until you were drowning? What was the tipping point?"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+
+  - id: "owner-hs-002"
+    title: "How to find painters who actually show up and care about quality"
+    audience: "OWNER"
+    cluster: "hiring-scaling"
+    format: "tip"
+    funnel: "pure-value"
+    communities:
+      - { platform: "reddit", name: "r/Paintingbusiness", priority: "A" }
+      - { platform: "reddit", name: "r/tradepainters", priority: "A" }
+      - { platform: "facebook", name: "Painter Nation", priority: "A" }
+      - { platform: "facebook", name: "Painters Helping Painters", priority: "B" }
+    pain_point: "general"
+    talking_points:
+      - "Stop posting on Indeed — every painter I've hired from there lasted less than 90 days. Best hires came from: paint store counter guys, trade school referrals, and existing crew members' recommendations"
+      - "We do a paid 1-day trial before any hire. Give them a prep-and-paint task on a real job and watch their work ethic, neatness, and attitude. Costs $200 but saves you from a bad hire"
+      - "Pay above market ($2-3/hr more than competitors), offer consistent hours, and treat them like adults. The good painters know what they're worth and they won't stay somewhere that doesn't respect them"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+
+  - id: "owner-hs-003"
+    title: "The real cost of a bad hire on a painting crew — my $8,000 lesson"
+    audience: "OWNER"
+    cluster: "hiring-scaling"
+    format: "story"
+    funnel: "pure-value"
+    communities:
+      - { platform: "reddit", name: "r/Paintingbusiness", priority: "A" }
+      - { platform: "reddit", name: "r/sweatystartup", priority: "B" }
+      - { platform: "facebook", name: "Painting Contractors by DripJobs", priority: "A" }
+      - { platform: "facebook", name: "Painting Business Pro", priority: "B" }
+    pain_point: "general"
+    talking_points:
+      - "Hired a guy who interviewed great, said he had 5 years experience. First week he cut corners on prep, left roller marks everywhere, and showed up late 3 out of 5 days"
+      - "I had to repaint an entire living room ($2,400), lost a client who left a 2-star review ($?? in future revenue), and spent 2 weeks training him before letting him go ($3,200 in wages)"
+      - "Now I have a 3-step hiring process: phone screen, paid trial day, 2-week probation with daily quality checks. Haven't had a bad hire since implementing it 14 months ago"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+
+  - id: "owner-hs-004"
+    title: "Systems you need before going from solo painter to 2+ crews"
+    audience: "OWNER"
+    cluster: "hiring-scaling"
+    format: "guide"
+    funnel: "pure-value"
+    communities:
+      - { platform: "reddit", name: "r/Paintingbusiness", priority: "A" }
+      - { platform: "reddit", name: "r/EntrepreneurRideAlong", priority: "A" }
+      - { platform: "reddit", name: "r/smallbusiness", priority: "B" }
+      - { platform: "facebook", name: "Painter Growth Secrets", priority: "A" }
+    pain_point: "general"
+    talking_points:
+      - "You need these before your second crew: 1) Job checklists with photo documentation requirements 2) A CRM that your crew leads can update from the field 3) A clear callback/warranty policy written down"
+      - "The mistake most painters make: hiring crew #2 while still running crew #1 themselves. You need to be off the tools and managing both crews or quality tanks on both jobs"
+      - "Financial systems matter too: separate job costing for each crew, weekly P&L review, and a cash reserve of 2 months' payroll ($15-25K for a 4-person operation) before you scale"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+
+  - id: "owner-hs-005"
+    title: "W-2 employees vs. 1099 subs — what's your crew structure?"
+    audience: "OWNER"
+    cluster: "hiring-scaling"
+    format: "question"
+    funnel: "pure-value"
+    communities:
+      - { platform: "reddit", name: "r/Paintingbusiness", priority: "A" }
+      - { platform: "reddit", name: "r/Construction", priority: "A" }
+      - { platform: "facebook", name: "Painting Business Pro", priority: "A" }
+      - { platform: "facebook", name: "Painters Helping Painters", priority: "B" }
+    pain_point: "general"
+    talking_points:
+      - "The IRS has been cracking down hard on misclassification in trades. If you set their schedule, provide tools, and control how the work is done, they're employees — period"
+      - "I switched from 1099 subs to W-2 employees last year. Payroll taxes add about 25% to labor costs but I have way more control over quality and scheduling"
+      - "The hybrid model some guys run: W-2 crew for your core team, 1099 subs for overflow work where they truly operate independently. Anyone doing this successfully?"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+
+  - id: "owner-hs-006"
+    title: "How do you keep good painters from leaving to start their own company?"
+    audience: "OWNER"
+    cluster: "hiring-scaling"
+    format: "tip"
+    funnel: "pure-value"
+    communities:
+      - { platform: "reddit", name: "r/Paintingbusiness", priority: "A" }
+      - { platform: "reddit", name: "r/tradepainters", priority: "B" }
+      - { platform: "facebook", name: "Painter Nation", priority: "A" }
+      - { platform: "facebook", name: "Painting Contractors by DripJobs", priority: "B" }
+    pain_point: "general"
+    talking_points:
+      - "Lost my best painter after 3 years — he started his own company and took 2 of my clients with him. It's the natural progression in this trade and you can't fully prevent it"
+      - "What's worked to retain people: profit sharing on jobs they lead (5% bonus if the job comes in under budget), a clear path to crew lead ($28/hr vs. $22/hr), and respecting their weekends"
+      - "The guys who leave usually aren't chasing more money — they want autonomy. Giving your best people crew lead roles with real decision-making authority keeps them longer than any raise"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+
+  - id: "owner-hs-007"
+    title: "Poll: What's your current crew size and revenue?"
+    audience: "OWNER"
+    cluster: "hiring-scaling"
+    format: "poll"
+    funnel: "pure-value"
+    communities:
+      - { platform: "facebook", name: "Painting Contractors by DripJobs", priority: "A" }
+      - { platform: "facebook", name: "Painter Nation", priority: "A" }
+      - { platform: "facebook", name: "Painting Business Pro", priority: "B" }
+      - { platform: "facebook", name: "Painter Growth Secrets", priority: "B" }
+    pain_point: "general"
+    talking_points:
+      - "Options: A) Solo — under $150K B) 1-2 employees — $150-300K C) 3-5 employees — $300-600K D) 6-10 employees — $600K-1.2M E) 10+ employees — $1.2M+"
+      - "Curious to see where this group falls. The jump from solo to first hire seems to be where most people get stuck"
+      - "If you're willing to share: what revenue level convinced you it was time to hire? And what revenue did you need to sustain each additional person?"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+
+
+  # ============================================================
+  # CLUSTER: marketing-general (OWNER)
+  # ============================================================
+
+  - id: "owner-mg-001"
+    title: "The Google Business Profile optimization checklist that doubled our inbound calls"
+    audience: "OWNER"
+    cluster: "marketing-general"
+    format: "guide"
+    funnel: "pure-value"
+    communities:
+      - { platform: "reddit", name: "r/Paintingbusiness", priority: "A" }
+      - { platform: "reddit", name: "r/LocalSEO", priority: "A" }
+      - { platform: "reddit", name: "r/GoogleMyBusiness", priority: "A" }
+      - { platform: "facebook", name: "Painter Marketing Mastermind", priority: "A" }
+    pain_point: "general"
+    talking_points:
+      - "1) Add 50+ photos tagged with service type and neighborhood name. 2) Post weekly updates (job progress, tips, before/afters). 3) Respond to every review within 24 hours, even the 5-stars"
+      - "4) Fill out every attribute — especially service areas, hours, and the Q&A section. 5) Get clients to mention specific services in reviews ('exterior painting,' 'cabinet refinishing') for keyword relevance"
+      - "We went from position 8 in the local 3-pack to position 2 in 6 weeks just by doing these consistently. Inbound calls went from 12/month to 28/month"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+
+  - id: "owner-mg-002"
+    title: "What's your #1 source of new painting leads right now?"
+    audience: "OWNER"
+    cluster: "marketing-general"
+    format: "question"
+    funnel: "pure-value"
+    communities:
+      - { platform: "reddit", name: "r/Paintingbusiness", priority: "A" }
+      - { platform: "reddit", name: "r/sweatystartup", priority: "B" }
+      - { platform: "facebook", name: "Painting Contractors by DripJobs", priority: "A" }
+      - { platform: "facebook", name: "Painter Nation", priority: "A" }
+    pain_point: "general"
+    talking_points:
+      - "For us it breaks down: 40% Google (organic + GBP), 25% referrals, 20% website direct, 15% other (Nextdoor, Facebook, yard signs)"
+      - "I'm hearing more guys say referrals are declining because younger homeowners just Google everything instead of asking their neighbors"
+      - "If you're spending money on marketing, what's giving you the best cost-per-lead? We're at about $35/lead from Google Ads and $12/lead from organic SEO"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+
+  - id: "owner-mg-003"
+    title: "How to get 5-star reviews without being awkward about it"
+    audience: "OWNER"
+    cluster: "marketing-general"
+    format: "tip"
+    funnel: "pure-value"
+    communities:
+      - { platform: "reddit", name: "r/Paintingbusiness", priority: "A" }
+      - { platform: "reddit", name: "r/GoogleMyBusiness", priority: "A" }
+      - { platform: "facebook", name: "Painter Marketing Mastermind", priority: "A" }
+      - { platform: "facebook", name: "Painters Helping Painters", priority: "B" }
+    pain_point: "general"
+    talking_points:
+      - "We send an automated text 2 hours after job completion with a direct Google review link. No 'if you had a good experience' hedging — just 'We'd love a quick review, here's the link'"
+      - "Timing matters: ask within 24 hours while the fresh paint smell is still making them happy. A week later they've forgotten how good it looked and moved on"
+      - "We went from 23 reviews to 89 in 8 months using this system. Every 10 new reviews correlated with roughly 2-3 additional inbound calls per month in our tracking"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+
+  - id: "owner-mg-004"
+    title: "Before/after content strategy that actually gets engagement on social media"
+    audience: "OWNER"
+    cluster: "marketing-general"
+    format: "tip"
+    funnel: "pure-value"
+    communities:
+      - { platform: "reddit", name: "r/Paintingbusiness", priority: "A" }
+      - { platform: "facebook", name: "Painter Marketing Mastermind", priority: "A" }
+      - { platform: "facebook", name: "Painter Growth Secrets", priority: "B" }
+      - { platform: "facebook", name: "Painting Business Brainiacs", priority: "B" }
+    pain_point: "general"
+    talking_points:
+      - "Stop posting just the finished photo. The format that gets 5-10x more engagement: before photo → progress shot → after photo → color name and brand in the caption"
+      - "Tag the neighborhood and use location hashtags. A post tagged 'Exterior repaint in Westfield' gets found by every homeowner in Westfield searching for a painter"
+      - "Post Reels/short videos of the transformation with trending audio — our best-performing Reel (cabinet spray in progress) got 45K views and landed 3 leads from the same zip code"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+
+  - id: "owner-mg-005"
+    title: "How we ranked #1 on Google for 'house painter [our city]' in 6 months"
+    audience: "OWNER"
+    cluster: "marketing-general"
+    format: "story"
+    funnel: "soft-mention"
+    communities:
+      - { platform: "reddit", name: "r/Paintingbusiness", priority: "A" }
+      - { platform: "reddit", name: "r/LocalSEO", priority: "A" }
+      - { platform: "reddit", name: "r/smallbusiness", priority: "B" }
+      - { platform: "facebook", name: "Painter Marketing Mastermind", priority: "A" }
+    pain_point: "general"
+    talking_points:
+      - "Started with zero organic traffic. Created service pages for every neighborhood we work in (e.g., 'Interior Painting in Brookside') — 15 pages total, each with unique photos from jobs in that area"
+      - "Added a blog posting 2x/month on topics homeowners actually search: 'How much does it cost to paint a 1,500 sq ft house' and 'Best exterior paint colors for brick homes in [city]'"
+      - "The interactive tools on our site (color visualizer, cost calculator) increased average session time from 45 seconds to 3.5 minutes, which Google rewards heavily in local rankings"
+    cta_if_any: "Adding a visualization tool to our website helped with SEO because it keeps visitors on the site way longer — Google sees that as a quality signal"
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+
+  - id: "owner-mg-006"
+    title: "What's working on Nextdoor for painting contractors? Share your approach"
+    audience: "OWNER"
+    cluster: "marketing-general"
+    format: "reply-prompt"
+    funnel: "pure-value"
+    communities:
+      - { platform: "reddit", name: "r/Paintingbusiness", priority: "A" }
+      - { platform: "reddit", name: "r/smallbusiness", priority: "B" }
+      - { platform: "facebook", name: "Painter Nation", priority: "A" }
+      - { platform: "facebook", name: "Painter Marketing Mastermind", priority: "B" }
+    pain_point: "general"
+    talking_points:
+      - "We claimed our Nextdoor business page 4 months ago and have gotten 7 leads from it — all free. The key seems to be responding to every 'looking for a painter' post within an hour"
+      - "Neighbor recommendations carry insane weight on that platform. One client recommended us in a thread and it generated 3 additional jobs in the same neighborhood"
+      - "Curious if anyone's paying for Nextdoor Ads — the rep quoted me $250/month and I can't tell if it's worth it or if organic engagement is enough"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+  # ============================================================
+  # CLUSTER: color-selection-tips (HOMEOWNER)
+  # ============================================================
+
+  - id: "home-cst-001"
+    title: "The undertone trick that finally helped me stop picking the wrong whites"
+    audience: "HOMEOWNER"
+    cluster: "color-selection-tips"
+    format: "tip"
+    funnel: "pure-value"
+    communities:
+      - { platform: "reddit", name: "r/HomeDecorating", priority: "A" }
+      - { platform: "reddit", name: "r/InteriorDesign", priority: "B" }
+      - { platform: "facebook", name: "Decorating Divas", priority: "A" }
+    pain_point: "homeowner-indecision"
+    talking_points:
+      - "Hold your white sample next to a pure white printer paper. the undertone (pink, yellow, green, blue) will jump out right away"
+      - "BM White Dove has a warm yellow undertone, Chantilly Lace is about as close to a neutral white as you'll get"
+      - "North-facing rooms make cool/blue undertones way more obvious, so a warm white like SW Alabaster can help balance out that gray daylight"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+  - id: "home-cst-002"
+    title: "A guide to picking paint colors that actually work with your flooring and countertops"
+    audience: "HOMEOWNER"
+    cluster: "color-selection-tips"
+    format: "guide"
+    funnel: "pure-value"
+    communities:
+      - { platform: "reddit", name: "r/DesignMyRoom", priority: "A" }
+      - { platform: "reddit", name: "r/InteriorDesign", priority: "A" }
+      - { platform: "facebook", name: "Interior Design: Ask Everything", priority: "B" }
+    pain_point: "homeowner-indecision"
+    talking_points:
+      - "Pull a secondary color from your countertop or flooring and use that as your wall color. honey oak floors look great with SW Evergreen Fog bc it picks up the cool undertone in the wood"
+      - "Cool-toned gray countertops (Carrara marble) clash with warm beiges. try BM Revere Pewter which sits somewhere in the middle without fighting both"
+      - "photograph your fixed finishes in natural light and hold color swatches against them before you buy anything. digital helps too"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+  - id: "home-cst-003"
+    title: "How lighting completely changes your paint color (and what to do about it)"
+    audience: "HOMEOWNER"
+    cluster: "color-selection-tips"
+    format: "guide"
+    funnel: "pure-value"
+    communities:
+      - { platform: "reddit", name: "r/HomeDecorating", priority: "A" }
+      - { platform: "reddit", name: "r/homeowners", priority: "B" }
+      - { platform: "facebook", name: "Love Decorating", priority: "A" }
+    pain_point: "homeowner-indecision"
+    talking_points:
+      - "SW Agreeable Gray looks like a warm gray in south-facing light but can shift almost lavender under cool LED bulbs. always test with your actual lighting"
+      - "Paint two big poster board samples and move them around the room at 9am, noon, 7pm to see how the color changes throughout the day"
+      - "if your paint keeps looking too blue or clinical, try swapping cool-white LEDs (5000K) for warm-white (2700K). sometimes the fix is just the bulbs"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+  - id: "home-cst-004"
+    title: "Why does every gray I pick look purple on my walls?"
+    audience: "HOMEOWNER"
+    cluster: "color-selection-tips"
+    format: "question"
+    funnel: "pure-value"
+    communities:
+      - { platform: "reddit", name: "r/DesignMyRoom", priority: "A" }
+      - { platform: "reddit", name: "r/HomeDecorating", priority: "A" }
+      - { platform: "facebook", name: "Decorating Divas", priority: "B" }
+    pain_point: "homeowner-indecision"
+    talking_points:
+      - "Most popular grays have either a purple or blue undertone that gets amplified by warm incandescent lighting — Repose Gray by Sherwin-Williams is a common offender in warm-lit rooms"
+      - "If you want a gray that stays gray, look for ones with a green undertone like Benjamin Moore Coventry Gray or Sherwin-Williams Mindful Gray"
+      - "Test your gray sample next to a true purple swatch — if they start looking like relatives, your gray has too much red-blue in it for your room's lighting"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+  - id: "home-cst-005"
+    title: "Color psychology basics: how your paint choices actually affect mood and energy"
+    audience: "HOMEOWNER"
+    cluster: "color-selection-tips"
+    format: "tip"
+    funnel: "pure-value"
+    communities:
+      - { platform: "reddit", name: "r/InteriorDesign", priority: "B" }
+      - { platform: "reddit", name: "r/femalelivingspace", priority: "A" }
+      - { platform: "facebook", name: "Interior Design: Ask Everything", priority: "A" }
+    pain_point: "general"
+    talking_points:
+      - "Blue-greens like BM Wythe Blue in bedrooms rank as the most calming. theres actual research on this, blue tones lower heart rate and blood pressure"
+      - "warm yellows and oranges get people talking and hungry, which is why a kitchen in SW Honey Bees feels way more inviting than a cool gray"
+      - "dark saturated colors like Farrow & Ball Hague Blue make big rooms feel intimate, light colors push walls out. use this if a room feels too cavernous or too tiny"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+  - id: "home-cst-006"
+    title: "I used to waste hundreds on sample pots — here's how I narrowed down colors before buying a single can"
+    audience: "HOMEOWNER"
+    cluster: "color-selection-tips"
+    format: "reply-prompt"
+    funnel: "soft-mention"
+    communities:
+      - { platform: "reddit", name: "r/HomeDecorating", priority: "A" }
+      - { platform: "reddit", name: "r/homeowners", priority: "B" }
+      - { platform: "facebook", name: "Love Decorating", priority: "B" }
+      - { platform: "facebook", name: "Decorating Divas", priority: "A" }
+    pain_point: "time-waste"
+    talking_points:
+      - "I used to buy like 8-10 sample pots per room at $8-10 each, and most were wrong within 5 mins of going on the wall"
+      - "Now I start digital. there are online tools that let you visualize colors on a photo of your actual home, eliminate the obvious bad ones before spending money"
+      - "Only after I've narrowed to 2-3 finalists do I buy physical samples and paint big swatches on poster board to check in real lighting"
+    cta_if_any: "there are online tools that let you visualize colors on your actual home photo"
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+  # ============================================================
+  # CLUSTER: room-transformations (HOMEOWNER)
+  # ============================================================
+
+  - id: "home-rt-001"
+    title: "Painted my dark 90s kitchen cabinets and I genuinely cannot believe it's the same room"
+    audience: "HOMEOWNER"
+    cluster: "room-transformations"
+    format: "story"
+    funnel: "pure-value"
+    communities:
+      - { platform: "reddit", name: "r/HomeImprovement", priority: "A" }
+      - { platform: "reddit", name: "r/AmateurRoomPorn", priority: "A" }
+      - { platform: "facebook", name: "DIY Home Remodeling Decor and Suggestions", priority: "A" }
+    pain_point: "general"
+    talking_points:
+      - "went from dated honey oak cabinets to BM Simply White with brushed brass hardware. total cost was under $400 for the whole kitchen"
+      - "the biggest thing was proper prep: deglosser, 2 coats of shellac-based primer, then 2 coats of cabinet paint with a foam roller for a smooth finish"
+      - "the room went from cramped and dark to bright and like twice as big. we didn't change anything else, same counters, same floors, same layout"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+  - id: "home-rt-002"
+    title: "How one accent wall in Sherwin-Williams Inkwell completely changed the vibe of my living room"
+    audience: "HOMEOWNER"
+    cluster: "room-transformations"
+    format: "story"
+    funnel: "pure-value"
+    communities:
+      - { platform: "reddit", name: "r/malelivingspace", priority: "A" }
+      - { platform: "reddit", name: "r/AmateurRoomPorn", priority: "A" }
+      - { platform: "facebook", name: "Decorating Divas", priority: "B" }
+    pain_point: "general"
+    talking_points:
+      - "the room was all builder-beige and felt bland. one accent wall behind the sofa in SW Inkwell (deep navy-black) instantly gave it a moody vibe"
+      - "dark accent walls make art and shelving pop bc of contrast. my floating shelves with plants went from invisible to actually noticeable"
+      - "cost one gallon of paint ($55) and a saturday afternoon. way cheaper than buying new furniture to change how the room feels"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+  - id: "home-rt-003"
+    title: "The fastest way to make a small bathroom feel like a spa: go dark and moody"
+    audience: "HOMEOWNER"
+    cluster: "room-transformations"
+    format: "tip"
+    funnel: "pure-value"
+    communities:
+      - { platform: "reddit", name: "r/HomeDecorating", priority: "A" }
+      - { platform: "reddit", name: "r/InteriorDesign", priority: "B" }
+      - { platform: "facebook", name: "Love Decorating", priority: "A" }
+    pain_point: "general"
+    talking_points:
+      - "Counterintuitive but true: dark paint in a small powder room (like Farrow & Ball Railings or Benjamin Moore Wrought Iron) makes it feel intentional and luxe rather than cramped"
+      - "Pair the dark walls with warm metallic fixtures and a big mirror — the reflection doubles the sense of space while the dark color adds drama"
+      - "White bathrooms highlight every scuff and imperfection while deep colors hide them and age gracefully between touch-ups"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+  - id: "home-rt-004"
+    title: "Don't sleep on painting your ceiling a color, it transforms a room more than walls do"
+    audience: "HOMEOWNER"
+    cluster: "room-transformations"
+    format: "tip"
+    funnel: "pure-value"
+    communities:
+      - { platform: "reddit", name: "r/InteriorDesign", priority: "A" }
+      - { platform: "reddit", name: "r/femalelivingspace", priority: "B" }
+      - { platform: "facebook", name: "Interior Design: Ask Everything", priority: "A" }
+    pain_point: "general"
+    talking_points:
+      - "a ceiling in BM Pale Oak (warm greige) instead of flat white made my whole open-concept space feel cozy without darkening it"
+      - "in bedrooms, a soft blue ceiling like SW Topsail creates a sky effect that makes the room feel calm and taller"
+      - "for bold moves, paint the ceiling the same color as the walls. designers call it color drenching and it works great in small rooms with high ceilings"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+  - id: "home-rt-005"
+    title: "What's the most dramatic transformation you've done with just paint, no new furniture or renos?"
+    audience: "HOMEOWNER"
+    cluster: "room-transformations"
+    format: "question"
+    funnel: "pure-value"
+    communities:
+      - { platform: "reddit", name: "r/HomeDecorating", priority: "A" }
+      - { platform: "reddit", name: "r/AmateurRoomPorn", priority: "B" }
+      - { platform: "facebook", name: "Decorating Divas", priority: "A" }
+      - { platform: "facebook", name: "Love Decorating", priority: "B" }
+    pain_point: "general"
+    talking_points:
+      - "painting brick fireplaces white (BM Cloud White) is one of the biggest single changes you can make. takes a room from 1995 to 2026 in a weekend"
+      - "repainting dark wood trim and doors in clean white modernizes a whole house for a few hundred bucks"
+      - "even just going from flat to satin finish on the same color makes a tired room feel refreshed and easier to clean"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+  - id: "home-rt-006"
+    title: "Picked my color, loved the swatch, hated it on the wall. anyone else been through this?"
+    audience: "HOMEOWNER"
+    cluster: "room-transformations"
+    format: "reply-prompt"
+    funnel: "soft-mention"
+    communities:
+      - { platform: "reddit", name: "r/HomeDecorating", priority: "A" }
+      - { platform: "reddit", name: "r/homeowners", priority: "B" }
+      - { platform: "facebook", name: "Decorating Divas", priority: "A" }
+    pain_point: "time-waste"
+    talking_points:
+      - "small swatches lie. a 2-inch chip cant tell you how a color looks on 150 sq feet of wall bc colors get more intense at scale"
+      - "before my last repaint i used a tool that lets you upload a photo and see colors on your actual walls digitally. saved me from my first pick which looked terrible at full size"
+      - "if you do physical samples, paint at least a 2x2 section and look at it at different times of day before committing"
+    cta_if_any: "a tool that lets you upload a photo of your actual room and preview colors on the walls digitally"
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+  # ============================================================
+  # CLUSTER: trending-colors (HOMEOWNER)
+  # ============================================================
+
+  - id: "home-tc-001"
+    title: "2026 color trends that will actually still look good in 5 years"
+    audience: "HOMEOWNER"
+    cluster: "trending-colors"
+    format: "tip"
+    funnel: "pure-value"
+    communities:
+      - { platform: "reddit", name: "r/InteriorDesign", priority: "A" }
+      - { platform: "reddit", name: "r/HomeDecorating", priority: "A" }
+      - { platform: "facebook", name: "Decorating Divas", priority: "B" }
+    pain_point: "homeowner-indecision"
+    talking_points:
+      - "Warm earth tones like SW Warm Stone and BM Cinnamon Slate are trending but they also have staying power bc they're rooted in natural materials vs just whatever was popular that year"
+      - "Rich greens (BM Salamander, SW Pewter Green) have been climbing for 3 years straight. that's not a fad, thats a real shift"
+      - "Safest bet is the move away from cool grays toward warm neutrals. SW Accessible Beige and BM Edgecomb Gray are basically future-proof at this point"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+  - id: "home-tc-002"
+    title: "Color of the Year picks are marketing, here's how to actually use them"
+    audience: "HOMEOWNER"
+    cluster: "trending-colors"
+    format: "tip"
+    funnel: "pure-value"
+    communities:
+      - { platform: "reddit", name: "r/InteriorDesign", priority: "A" }
+      - { platform: "reddit", name: "r/interiordecorating", priority: "B" }
+      - { platform: "facebook", name: "Interior Design: Ask Everything", priority: "A" }
+    pain_point: "homeowner-indecision"
+    talking_points:
+      - "paint companies pick flashy colors of the year for press. but they always put out companion palettes that are actually livable, those are the ones worth looking at"
+      - "use the trendy bold as an accent (front door, powder room, back of a bookshelf) and pull a neutral from the same palette for your main walls"
+      - "if you love a color of the year but its too intense, ask the paint store to mix it at 50%. you get the same undertone at a much calmer level. works surprisingly well"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+  - id: "home-tc-003"
+    title: "The most timeless paint colors that designers keep using decade after decade"
+    audience: "HOMEOWNER"
+    cluster: "trending-colors"
+    format: "guide"
+    funnel: "pure-value"
+    communities:
+      - { platform: "reddit", name: "r/InteriorDesign", priority: "A" }
+      - { platform: "reddit", name: "r/HomeDecorating", priority: "B" }
+      - { platform: "reddit", name: "r/RealEstate", priority: "B" }
+      - { platform: "facebook", name: "Love Decorating", priority: "A" }
+    pain_point: "homeowner-indecision"
+    talking_points:
+      - "BM White Dove, SW Agreeable Gray, and Farrow & Ball Wimborne White have been designer staples for 15+ years bc they work with almost any lighting and style"
+      - "Navy (like Hale Navy by BM) is the one bold color that never goes out of style. reads classic in traditional homes and sophisticated in modern ones"
+      - "if you're selling in the next 3-5 years, stick to these proven neutrals for main areas and save trendy colors for easy-to-repaint spaces like powder rooms"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+  - id: "home-tc-004"
+    title: "What trending paint color did you go with that you already regret?"
+    audience: "HOMEOWNER"
+    cluster: "trending-colors"
+    format: "question"
+    funnel: "pure-value"
+    communities:
+      - { platform: "reddit", name: "r/HomeDecorating", priority: "A" }
+      - { platform: "reddit", name: "r/homeowners", priority: "B" }
+      - { platform: "facebook", name: "Decorating Divas", priority: "A" }
+      - { platform: "facebook", name: "Decorating and More", priority: "B" }
+    pain_point: "time-waste"
+    talking_points:
+      - "The all-gray-everything trend from 2016-2020 aged fast — a lot of people are now repainting Repose Gray rooms because they feel cold and dated"
+      - "Millennial pink accent walls had about a two-year window before they started feeling trendy in the wrong way"
+      - "The lesson: use trendy colors in low-commitment spots (front door, accent furniture, removable wallpaper) so you are not repainting entire rooms every few years"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+  - id: "home-tc-005"
+    title: "Warm whites vs cool whites vs creamy whites — which camp are you in?"
+    audience: "HOMEOWNER"
+    cluster: "trending-colors"
+    format: "poll"
+    funnel: "pure-value"
+    communities:
+      - { platform: "reddit", name: "r/HomeDecorating", priority: "A" }
+      - { platform: "reddit", name: "r/femalelivingspace", priority: "B" }
+      - { platform: "facebook", name: "Decorating Divas", priority: "A" }
+      - { platform: "facebook", name: "Love Decorating", priority: "B" }
+    pain_point: "homeowner-indecision"
+    talking_points:
+      - "Cool whites (BM Decorator's White, SW Extra White) give a crisp modern look but can feel sterile if your room lacks natural light"
+      - "Warm whites (BM White Dove, SW Alabaster) are the current darling of designers because they feel collected and livable without reading yellow"
+      - "Creamy whites (BM Navajo White, SW Ivoire) work beautifully in traditional and farmhouse styles but can clash with cool-toned countertops and fixtures"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+  # ============================================================
+  # CLUSTER: hiring-a-painter (HOMEOWNER)
+  # ============================================================
+
+  - id: "home-hap-001"
+    title: "How to vet a painting contractor so you don't end up with a bad job"
+    audience: "HOMEOWNER"
+    cluster: "hiring-a-painter"
+    format: "guide"
+    funnel: "pure-value"
+    communities:
+      - { platform: "reddit", name: "r/HomeImprovement", priority: "A" }
+      - { platform: "reddit", name: "r/homeowners", priority: "A" }
+      - { platform: "facebook", name: "DIY Home Remodeling Decor and Suggestions", priority: "B" }
+    pain_point: "general"
+    talking_points:
+      - "Get at least 3 written quotes that break down labor, materials, and paint separately. if a contractor won't itemize, that's a red flag"
+      - "Ask specifically how they handle prep: do they sand, prime, caulk gaps, fill nail holes? Prep is like 80% of the job and the first thing cheap painters skip"
+      - "Check their insurance certificate directly with the insurer, not just a copy they hand you. make sure it covers workers comp, not just general liability"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+  - id: "home-hap-002"
+    title: "What a fair price for interior house painting actually is in 2026"
+    audience: "HOMEOWNER"
+    cluster: "hiring-a-painter"
+    format: "guide"
+    funnel: "pure-value"
+    communities:
+      - { platform: "reddit", name: "r/HomeImprovement", priority: "A" }
+      - { platform: "reddit", name: "r/homeowners", priority: "A" }
+      - { platform: "reddit", name: "r/FirstTimeHomeBuyer", priority: "B" }
+    pain_point: "general"
+    talking_points:
+      - "For a standard 2000 sq ft interior, expect $4,000-$8,000 depending on your market and ceiling height. anything under $3,000 should raise some questions"
+      - "Per room is usually $400-$800 for a bedroom (ceiling and trim included), bathrooms and kitchens cost more bc of all the cutting in around fixtures"
+      - "The paint itself is a small fraction of the total. labor is 75-85% of a pro paint job, that's where quality actually lives"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+  - id: "home-hap-003"
+    title: "Red flags I missed when hiring my first painter"
+    audience: "HOMEOWNER"
+    cluster: "hiring-a-painter"
+    format: "tip"
+    funnel: "pure-value"
+    communities:
+      - { platform: "reddit", name: "r/homeowners", priority: "A" }
+      - { platform: "reddit", name: "r/FirstTimeHomeBuyer", priority: "A" }
+      - { platform: "facebook", name: "DIY Home Remodeling Decor and Suggestions", priority: "B" }
+    pain_point: "general"
+    talking_points:
+      - "They wanted 50% upfront before starting anything. reputable painters ask for 10-20% max, never half the job cost before they've done a thing"
+      - "The quote was verbal only and way lower than the other two. cheapest bid usually means they're cutting corners on prep, thinner coats, or sending their least experienced guys"
+      - "They couldn't tell me what products they use. a good painter has opinions about this stuff, primer brand, paint line, sheen for each surface, etc."
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+  - id: "home-hap-004"
+    title: "Should you buy the paint yourself or let the painter supply it?"
+    audience: "HOMEOWNER"
+    cluster: "hiring-a-painter"
+    format: "tip"
+    funnel: "pure-value"
+    communities:
+      - { platform: "reddit", name: "r/HomeImprovement", priority: "A" }
+      - { platform: "reddit", name: "r/homeowners", priority: "B" }
+      - { platform: "facebook", name: "DIY Home Remodeling Decor and Suggestions", priority: "A" }
+    pain_point: "general"
+    talking_points:
+      - "Most professional painters get contractor pricing (30-40% off retail) so letting them supply paint often costs you less than buying it yourself at Home Depot"
+      - "The advantage of buying it yourself is you control exactly what goes on your walls — some painters will quote Benjamin Moore but use a cheaper substitute if you are not watching"
+      - "A good compromise: agree on the exact product and color in the contract, let them buy it at their discount, and verify the cans on site before they start"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+  - id: "home-hap-005"
+    title: "For those who hired painters, what do you wish you'd communicated upfront?"
+    audience: "HOMEOWNER"
+    cluster: "hiring-a-painter"
+    format: "question"
+    funnel: "pure-value"
+    communities:
+      - { platform: "reddit", name: "r/homeowners", priority: "A" }
+      - { platform: "reddit", name: "r/HomeImprovement", priority: "B" }
+      - { platform: "facebook", name: "Decorating and More", priority: "B" }
+      - { platform: "facebook", name: "DIY Home Remodeling Decor and Suggestions", priority: "A" }
+    pain_point: "general"
+    talking_points:
+      - "Clarify finish types for every surface upfront — eggshell on walls, semi-gloss on trim, and flat on ceilings is standard but not every painter assumes the same defaults"
+      - "Discuss furniture moving expectations before day one: will they move everything to center and cover it, or do they expect rooms cleared?"
+      - "Set a clear expectation on touch-ups — most reputable painters include a touch-up visit 2-4 weeks after completion once everything has cured and any spots show up"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+  - id: "home-hap-006"
+    title: "How I locked in my paint colors before the crew arrived so we didn't waste time"
+    audience: "HOMEOWNER"
+    cluster: "hiring-a-painter"
+    format: "reply-prompt"
+    funnel: "soft-mention"
+    communities:
+      - { platform: "reddit", name: "r/HomeImprovement", priority: "B" }
+      - { platform: "reddit", name: "r/homeowners", priority: "A" }
+      - { platform: "facebook", name: "Decorating Divas", priority: "B" }
+    pain_point: "time-waste"
+    talking_points:
+      - "My painter charges $75/hour and I was still hemming and hawing about colors on day one of a previous job — never again"
+      - "This time I finalized every color weeks in advance by uploading photos of each room to a visualization tool that shows paint on your actual walls, then confirmed my top two with physical samples"
+      - "Having a printed color schedule (room, wall color, trim color, finish, brand and code) ready for the crew on day one made everything run smoother and eliminated all the back-and-forth"
+    cta_if_any: "uploading photos of each room to a visualization tool that shows paint on your actual walls"
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+  # ============================================================
+  # CLUSTER: diy-vs-pro (HOMEOWNER)
+  # ============================================================
+
+  - id: "home-dvp-001"
+    title: "Honest cost breakdown, what I spent DIYing vs what the pro quoted"
+    audience: "HOMEOWNER"
+    cluster: "diy-vs-pro"
+    format: "tip"
+    funnel: "pure-value"
+    communities:
+      - { platform: "reddit", name: "r/HomeImprovement", priority: "A" }
+      - { platform: "reddit", name: "r/DIY", priority: "A" }
+      - { platform: "facebook", name: "DIY Home Remodeling Decor and Suggestions", priority: "A" }
+    pain_point: "general"
+    talking_points:
+      - "Pro quote for 3 bedrooms: $3,200. My DIY cost for paint, primer, tape, rollers, drop cloths, and a good angled brush: about $650. But it took me 4 full weekends."
+      - "What nobody tells you about DIY cost: if you do not already own a good ladder, quality roller frames, and extension poles, your first project has an extra $150-200 in tool startup costs"
+      - "Factor in your hourly value — if those 4 weekends are worth more than $2,500 to you in lost family time or freelance income, the pro is actually cheaper"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+  - id: "home-dvp-002"
+    title: "The rooms you should always DIY paint and the ones worth hiring out"
+    audience: "HOMEOWNER"
+    cluster: "diy-vs-pro"
+    format: "guide"
+    funnel: "pure-value"
+    communities:
+      - { platform: "reddit", name: "r/HomeImprovement", priority: "A" }
+      - { platform: "reddit", name: "r/homeowners", priority: "B" }
+      - { platform: "reddit", name: "r/DIY", priority: "A" }
+    pain_point: "general"
+    talking_points:
+      - "DIY-friendly: bedrooms, home offices, and any room with simple geometry — four flat walls with standard trim are forgiving even for beginners"
+      - "Hire a pro for: stairwells with high ceilings, rooms with extensive crown molding, and any space requiring spray application like kitchen cabinets — the risk-to-reward ratio flips"
+      - "Bathrooms and kitchens sit in the middle — they are small (cheaper to hire out) but require careful cutting around fixtures and proper moisture-resistant products"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+  - id: "home-dvp-003"
+    title: "What's the biggest DIY painting mistake you made?"
+    audience: "HOMEOWNER"
+    cluster: "diy-vs-pro"
+    format: "question"
+    funnel: "pure-value"
+    communities:
+      - { platform: "reddit", name: "r/DIY", priority: "A" }
+      - { platform: "reddit", name: "r/HomeImprovement", priority: "B" }
+      - { platform: "facebook", name: "DIY Home Remodeling Decor and Suggestions", priority: "A" }
+      - { platform: "facebook", name: "Decorating and More", priority: "B" }
+    pain_point: "general"
+    talking_points:
+      - "Not priming over dark colors is the most common one — two coats of Sherwin-Williams Pure White over a dark navy without primer means you are doing four or five coats total and it still looks patchy"
+      - "Cutting in one wall at a time instead of doing all cutting first leads to visible lap marks where the brushed edges dried before you rolled, creating a frame effect"
+      - "Using cheap paint is false economy — Benjamin Moore Regal or Sherwin-Williams Emerald cover in fewer coats, level better, and are genuinely easier for beginners to work with"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+  - id: "home-dvp-004"
+    title: "I painted every room in my first house myself — here's what I learned about when DIY stops being worth it"
+    audience: "HOMEOWNER"
+    cluster: "diy-vs-pro"
+    format: "story"
+    funnel: "pure-value"
+    communities:
+      - { platform: "reddit", name: "r/FirstTimeHomeBuyer", priority: "A" }
+      - { platform: "reddit", name: "r/HomeImprovement", priority: "B" }
+      - { platform: "reddit", name: "r/DIY", priority: "B" }
+      - { platform: "facebook", name: "DIY Home Remodeling Decor and Suggestions", priority: "A" }
+    pain_point: "general"
+    talking_points:
+      - "My first room took 12 hours for what a two-person crew would do in 3 — but by room six I had it down to about 5 hours, which felt worth it for simple bedrooms"
+      - "The stairwell with the 18-foot ceiling nearly killed me — renting scaffolding, working overhead, and dealing with lap marks on a huge unbroken wall taught me that some jobs need pros"
+      - "The sweet spot I landed on: I DIY all the simple rooms and bank those savings to hire a pro for the technical stuff like exterior, cabinets, and high ceilings"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+  - id: "home-dvp-005"
+    title: "5 things to get right if you're DIY painting for the first time"
+    audience: "HOMEOWNER"
+    cluster: "diy-vs-pro"
+    format: "tip"
+    funnel: "pure-value"
+    communities:
+      - { platform: "reddit", name: "r/DIY", priority: "A" }
+      - { platform: "reddit", name: "r/FirstTimeHomeBuyer", priority: "A" }
+      - { platform: "facebook", name: "DIY Home Remodeling Decor and Suggestions", priority: "B" }
+    pain_point: "general"
+    talking_points:
+      - "Buy a quality angled brush (Purdy or Wooster, $12-15) and a good microfiber roller cover — cheap tools leave lint, streaks, and brush marks that no technique can fix"
+      - "Tape is not a crutch, it is a tool — use FrogTape on trim edges and press it down firmly with a putty knife so paint cannot bleed underneath"
+      - "Keep a wet edge at all times: work in 4-foot sections, rolling from dry area into wet area, and do not let any edge dry before you blend into it or you will see every lap mark"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+  # ============================================================
+  # CLUSTER: exterior-curb-appeal (HOMEOWNER)
+  # ============================================================
+
+  - id: "home-eca-001"
+    title: "Exterior paint color combos that actually boost curb appeal"
+    audience: "HOMEOWNER"
+    cluster: "exterior-curb-appeal"
+    format: "tip"
+    funnel: "pure-value"
+    communities:
+      - { platform: "reddit", name: "r/HomeImprovement", priority: "A" }
+      - { platform: "reddit", name: "r/homeowners", priority: "A" }
+      - { platform: "reddit", name: "r/RealEstate", priority: "B" }
+    pain_point: "general"
+    talking_points:
+      - "The classic three-color rule: body, trim, and accent door — Benjamin Moore Revere Pewter body, White Dove trim, and Newburyport Blue front door is a combination that works on almost any style home"
+      - "Dark body colors like Sherwin-Williams Iron Ore or Urbane Bronze are having a moment on modern farmhouses and make the home feel substantial and grounded"
+      - "Always look at your roof color before picking exterior paint — a warm brown roof clashes with cool gray siding, while a charcoal roof works with almost anything"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+  - id: "home-eca-002"
+    title: "The front door color that realtors say adds the most perceived value"
+    audience: "HOMEOWNER"
+    cluster: "exterior-curb-appeal"
+    format: "tip"
+    funnel: "pure-value"
+    communities:
+      - { platform: "reddit", name: "r/RealEstate", priority: "A" }
+      - { platform: "reddit", name: "r/homeowners", priority: "A" }
+      - { platform: "reddit", name: "r/FirstTimeHomeBuyer", priority: "B" }
+      - { platform: "facebook", name: "Decorating and More", priority: "B" }
+    pain_point: "general"
+    talking_points:
+      - "Zillow data has consistently shown that homes with dark navy or black front doors (like Benjamin Moore Hale Navy or Onyx) sell for more than expected — it signals intentional, put-together design"
+      - "A bold front door color costs one quart of paint ($20-25) and takes an hour — it is the single highest ROI curb appeal project that exists"
+      - "Match your door color to your house style: deep red for colonials, black for modern, sage green for craftsman, yellow for cottage — context matters more than trend"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+  - id: "home-eca-003"
+    title: "Guide to choosing exterior paint colors you won't regret in 10 years"
+    audience: "HOMEOWNER"
+    cluster: "exterior-curb-appeal"
+    format: "guide"
+    funnel: "soft-mention"
+    communities:
+      - { platform: "reddit", name: "r/homeowners", priority: "A" }
+      - { platform: "reddit", name: "r/HomeImprovement", priority: "A" }
+      - { platform: "reddit", name: "r/centuryhomes", priority: "B" }
+      - { platform: "facebook", name: "DIY Home Remodeling Decor and Suggestions", priority: "B" }
+    pain_point: "homeowner-indecision"
+    talking_points:
+      - "Exterior colors look dramatically different than interior because direct sunlight washes them out by 2-3 shades — always go one shade darker than what you think you want"
+      - "Drive your neighborhood and photograph houses with colors you admire, then color-match them at the paint store — real-world examples beat swatch decks every time"
+      - "Before committing to a $5,000+ exterior paint job, use a visualization tool that lets you see colors on a photo of your actual house — it is the only way to judge scale, roof interaction, and landscaping context without painting test patches on your siding"
+    cta_if_any: "use a visualization tool that lets you see colors on a photo of your actual house"
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+  - id: "home-eca-004"
+    title: "What exterior paint color did your neighbors compliment you on (or complain about)?"
+    audience: "HOMEOWNER"
+    cluster: "exterior-curb-appeal"
+    format: "question"
+    funnel: "pure-value"
+    communities:
+      - { platform: "reddit", name: "r/homeowners", priority: "A" }
+      - { platform: "reddit", name: "r/HomeImprovement", priority: "B" }
+      - { platform: "facebook", name: "Love Decorating", priority: "B" }
+      - { platform: "facebook", name: "Decorating and More", priority: "A" }
+    pain_point: "general"
+    talking_points:
+      - "Earthy greens like Sherwin-Williams Evergreen Fog on exteriors get constant compliments because they blend with landscaping while still standing out from the beige-and-gray crowd"
+      - "HOA-safe does not mean boring — Benjamin Moore Kendall Charcoal is approved in most neighborhoods and looks far more sophisticated than the standard tan or pale gray"
+      - "If you are in a historic district, research your home's original era colors — century homes painted in historically accurate palettes get the most positive reactions"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+  - id: "home-eca-005"
+    title: "We painted our 1960s ranch from faded yellow to SW Peppercorn and the transformation is crazy"
+    audience: "HOMEOWNER"
+    cluster: "exterior-curb-appeal"
+    format: "story"
+    funnel: "pure-value"
+    communities:
+      - { platform: "reddit", name: "r/AmateurRoomPorn", priority: "B" }
+      - { platform: "reddit", name: "r/HomeImprovement", priority: "A" }
+      - { platform: "reddit", name: "r/Flipping", priority: "B" }
+      - { platform: "facebook", name: "DIY Home Remodeling Decor and Suggestions", priority: "A" }
+    pain_point: "general"
+    talking_points:
+      - "The faded butter yellow made our house look tired and dated — switching to SW Peppercorn (a deep warm charcoal) with SW Pure White trim instantly made it look like a different house"
+      - "We added black modern house numbers and a new porch light in the same finish — total spend including paint was under $900 for the DIY exterior and the perceived value jump was enormous"
+      - "Our neighbor told us she thought someone had bought and renovated the house because the change was that dramatic — paint is genuinely the most cost-effective exterior renovation"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+  # ============================================================
+  # CLUSTER: tech-for-trades (ADJACENT)
+  # ============================================================
+
+  - id: "adj-tft-001"
+    title: "What software do you wish existed for your trade business?"
+    audience: "ADJACENT"
+    cluster: "tech-for-trades"
+    format: "question"
+    funnel: "pure-value"
+    communities:
+      - { platform: "reddit", name: "r/Construction", priority: "A" }
+      - { platform: "reddit", name: "r/GeneralContractor", priority: "B" }
+      - { platform: "facebook", name: "Grow Your Home Service Business", priority: "B" }
+    pain_point: "time-waste"
+    talking_points:
+      - "Most trade software is built by people who never worked in the field. shows in clunky UIs and features nobody asked for"
+      - "The gap between enterprise tools like ServiceTitan and free spreadsheets is huge. mid-market trades get totally ignored"
+      - "Crews won't adopt tech when it adds steps instead of removing them. the best software replaces a clipboard, not adds to it"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+  - id: "adj-tft-002"
+    title: "Has anyone actually gotten their crew to use a CRM consistently?"
+    audience: "ADJACENT"
+    cluster: "tech-for-trades"
+    format: "question"
+    funnel: "pure-value"
+    communities:
+      - { platform: "reddit", name: "r/GeneralContractor", priority: "A" }
+      - { platform: "facebook", name: "ServiceTitan Masterminds", priority: "B" }
+    pain_point: "time-waste"
+    talking_points:
+      - "The #1 reason CRM adoption fails is forcing field guys to do data entry at the end of a 10-hour day. capture has to happen on-site or it wont happen"
+      - "Start with one workflow that saves the owner time (automated follow-ups on estimates) and let the crew see it working before you ask them to change"
+      - "Contractors who succeed with CRMs pick tools that integrate with how they already talk. if your crew lives in text messages, your CRM better handle SMS"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+  - id: "adj-tft-003"
+    title: "5 automations that saved my painting business 8+ hours per week"
+    audience: "ADJACENT"
+    cluster: "tech-for-trades"
+    format: "tip"
+    funnel: "pure-value"
+    communities:
+      - { platform: "reddit", name: "r/Construction", priority: "A" }
+      - { platform: "facebook", name: "Grow Your Home Service Business", priority: "A" }
+    pain_point: "time-waste"
+    talking_points:
+      - "Auto-sending a follow-up text 48 hours after an estimate closes more jobs than any sales training. homeowners just forget, they're not ghosting you"
+      - "Photo documentation at job start and finish uploaded automatically eliminates like 90% of damage disputes and warranty claims"
+      - "Scheduling tools that let customers pick their own start date cut back-and-forth calls from 3-4 to zero"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+  - id: "adj-tft-004"
+    title: "How I went from paper estimates to a fully digital sales process in my contracting business"
+    audience: "ADJACENT"
+    cluster: "tech-for-trades"
+    format: "story"
+    funnel: "pure-value"
+    communities:
+      - { platform: "reddit", name: "r/GeneralContractor", priority: "A" }
+      - { platform: "facebook", name: "ServiceTitan Masterminds", priority: "B" }
+    pain_point: "unprofessional-image"
+    talking_points:
+      - "Homeowners under 40 expect a professional PDF estimate within 24 hours. handwritten carbon copies make you look behind the times"
+      - "The hardest part wasnt the tech, it was breaking the habit of doing math in my truck. i kept paper backups for 2 months before i trusted it"
+      - "Close rate jumped 15% not bc estimates were more accurate but bc they looked professional. perception is everything when asking for $8K+"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+  - id: "adj-tft-005"
+    title: "A contractor's guide to building a lead pipeline with free and low-cost digital tools"
+    audience: "ADJACENT"
+    cluster: "tech-for-trades"
+    format: "guide"
+    funnel: "soft-mention"
+    communities:
+      - { platform: "reddit", name: "r/LeadGeneration", priority: "A" }
+      - { platform: "reddit", name: "r/LocalSEO", priority: "B" }
+      - { platform: "facebook", name: "Grow Your Home Service Business", priority: "B" }
+    pain_point: "no-lead-capture"
+    talking_points:
+      - "Google Business Profile is the single best ROI channel for local trades. contractors who post one photo per week get 3x more direction requests"
+      - "Adding interactive tools to your site like visualizers or instant quote calculators keeps visitors longer and captures emails from people who'd normally leave"
+      - "trades businesses winning at digital marketing treat their website like a 24/7 salesperson. every page should have one clear next step for visitors"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+  # ============================================================
+  # CLUSTER: saas-building (ADJACENT)
+  # ============================================================
+
+  - id: "adj-saas-001"
+    title: "What I learned selling SaaS to painting contractors who hate software"
+    audience: "ADJACENT"
+    cluster: "saas-building"
+    format: "story"
+    funnel: "direct-promotion"
+    communities:
+      - { platform: "reddit", name: "r/SaaS", priority: "A" }
+      - { platform: "reddit", name: "r/microsaas", priority: "B" }
+      - { platform: "reddit", name: "r/B2BSaaS", priority: "B" }
+    pain_point: "general"
+    talking_points:
+      - "PaintColorPro lets painters embed a color visualizer on their site so homeowners can preview colors before estimates. replaces the 'just imagine it' pitch"
+      - "Tradespeople buy outcomes not features. 'increase close rate by 20%' works, 'AR-powered color visualization engine' gets blank stares"
+      - "the best feedback comes from watching a contractor use your tool on a job site with paint on their hands and sun glare on their phone. lab conditions mean nothing"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+  - id: "adj-saas-002"
+    title: "Month 3 building PaintColorPro: first paying customers and the pricing mistake that almost killed momentum"
+    audience: "ADJACENT"
+    cluster: "saas-building"
+    format: "story"
+    funnel: "direct-promotion"
+    communities:
+      - { platform: "reddit", name: "r/indiehackers", priority: "A" }
+      - { platform: "reddit", name: "r/SideProject", priority: "B" }
+      - { platform: "reddit", name: "r/microsaas", priority: "B" }
+    pain_point: "general"
+    talking_points:
+      - "Started PaintColorPro at $29/mo thinking contractors care about price. turns out the ones who adopt tech spend $500+/mo on marketing and $29 felt too cheap"
+      - "Building in public on Reddit drove way more qualified leads than Product Hunt. niche subreddits have actual buyers, launch platforms have other founders"
+      - "Contractors buy from recommendations not ads. every happy customer is worth 5-10 referrals in their local network"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+  - id: "adj-saas-003"
+    title: "3 counterintuitive lessons from building niche B2B SaaS for blue-collar industries"
+    audience: "ADJACENT"
+    cluster: "saas-building"
+    format: "tip"
+    funnel: "soft-mention"
+    communities:
+      - { platform: "reddit", name: "r/SaaS", priority: "A" }
+      - { platform: "reddit", name: "r/B2BSaaS", priority: "A" }
+      - { platform: "reddit", name: "r/marketing", priority: "B" }
+    pain_point: "general"
+    talking_points:
+      - "Phone calls beat email for everything. trade owners read email once a day at best, but they'll pick up the phone between jobs and give you solid feedback"
+      - "Onboarding for tradespeople needs to be done-for-you not self-serve. i set up every account personally and close rates doubled vs sending welcome emails"
+      - "the real competitor isnt another SaaS, its the status quo of doing nothing and relying on word of mouth"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+  - id: "adj-saas-004"
+    title: "How to find and validate a micro SaaS idea in a trades vertical you know nothing about"
+    audience: "ADJACENT"
+    cluster: "saas-building"
+    format: "guide"
+    funnel: "pure-value"
+    communities:
+      - { platform: "reddit", name: "r/microsaas", priority: "A" }
+      - { platform: "reddit", name: "r/indiehackers", priority: "A" }
+      - { platform: "reddit", name: "r/SideProject", priority: "B" }
+    pain_point: "general"
+    talking_points:
+      - "Browse trade Facebook groups for 2 weeks before building. complaints with 50+ comments are real pain points, 3 likes is noise"
+      - "Call 20 businesses and ask what takes the most time and doesn't make money. you'll hear the same 3 answers and one of them is your product"
+      - "Validate with a landing page and $100 on Google Ads targeting '[trade] + software'. if you cant get 5 signups in a week, demand isnt there or messaging is wrong"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+  # ============================================================
+  # CLUSTER: design-partnership (ADJACENT)
+  # ============================================================
+
+  - id: "adj-dp-001"
+    title: "Interior designers: how do you handle it when the painting contractor changes the color you specified?"
+    audience: "ADJACENT"
+    cluster: "design-partnership"
+    format: "question"
+    funnel: "pure-value"
+    communities:
+      - { platform: "facebook", name: "The Profitable Designer Community", priority: "A" }
+    pain_point: "unprofessional-image"
+    talking_points:
+      - "usually its not malice, its the painter substituting a close enough color bc the spec wasnt in a format they could hand to the paint counter"
+      - "designers who share a visual mockup get way fewer substitution issues than those who just list color codes on a spec sheet"
+      - "building a relationship with 2-3 reliable painters and giving them repeat work creates accountability no spec doc can match. they wont risk the relationship over colors"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+  - id: "adj-dp-002"
+    title: "Do you share color visualization mockups with clients before the painter starts?"
+    audience: "ADJACENT"
+    cluster: "design-partnership"
+    format: "question"
+    funnel: "soft-mention"
+    communities:
+      - { platform: "facebook", name: "The Profitable Designer Community", priority: "A" }
+    pain_point: "unprofessional-image"
+    talking_points:
+      - "Clients who see a realistic preview of their palette on their walls approve 2x faster and request fewer changes. the visualization sells your design"
+      - "Some painters are starting to offer visualization tools on their sites. designers who partner with them streamline the approval loop"
+      - "The biggest time sink is revision cycles from clients who cant imagine the result from a fan deck. any tool that bridges that gap saves everyone hours"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+  - id: "adj-dp-003"
+    title: "How to build a referral partnership with painting contractors that actually sends clients both ways"
+    audience: "ADJACENT"
+    cluster: "design-partnership"
+    format: "tip"
+    funnel: "pure-value"
+    communities:
+      - { platform: "facebook", name: "The Profitable Designer Community", priority: "A" }
+      - { platform: "reddit", name: "r/marketing", priority: "B" }
+    pain_point: "no-lead-capture"
+    talking_points:
+      - "Most designer-painter relationships are one-way. designer sends work but gets nothing back bc painter doesnt know how to position design services"
+      - "Give painter partners a one-page handout they can leave with homeowners explaining when design saves money. make it easy for them to refer you"
+      - "sweet spot is painters doing $500K-$2M annually. big enough for steady flow, small enough they value the relationship personally"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
+
+  - id: "adj-dp-004"
+    title: "How a simple color workflow change eliminated revision requests from my painting contractor projects"
+    audience: "ADJACENT"
+    cluster: "design-partnership"
+    format: "story"
+    funnel: "pure-value"
+    communities:
+      - { platform: "facebook", name: "The Profitable Designer Community", priority: "A" }
+    pain_point: "time-waste"
+    talking_points:
+      - "switched from sending a PDF color schedule to doing a 15-min video walkthrough with the lead painter before day one. misinterpretation dropped to near zero"
+      - "root cause of color mistakes is designers think in paint codes and painters think in whats on the shelf at their supplier. always confirm the paint line upfront"
+      - "adding a client-signed color approval step with visuals before the painter orders protects both from 'i didnt think it would look like that' disputes"
+    cta_if_any: null
+    status: "unused"
+    times_used: 0
+    last_used: null
+    notes: null
