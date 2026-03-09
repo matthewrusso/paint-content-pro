@@ -15,84 +15,98 @@ communities:
   - platform: reddit
     name: "r/Paintingbusiness"
     audience: OWNER
-    join_date: null        # Set this when you join: "2026-03-07"
+    join_date: 2026-03-09        # Set this when you join: "2026-03-07"
     priority: A
     rules: []
 
   - platform: reddit
     name: "r/paint"
     audience: HOMEOWNER
-    join_date: null
+    join_date: 2026-03-09
     priority: A
     rules: [no-promo]     # Strict no-promo community
 
   - platform: reddit
     name: "r/Housepainting101"
     audience: HOMEOWNER
-    join_date: null
+    join_date: 2026-03-09
     priority: A
     rules: [no-promo]     # Strict no-promo community
 
   - platform: reddit
     name: "r/sweatystartup"
     audience: OWNER
-    join_date: null
+    join_date: 2026-03-09
     priority: B
     rules: []
 
   - platform: reddit
     name: "r/smallbusiness"
     audience: OWNER
-    join_date: null
+    join_date: 2026-03-09
     priority: B
     rules: []
 
   - platform: reddit
     name: "r/Entrepreneur"
     audience: OWNER
-    join_date: null
+    join_date: 2026-03-09
     priority: B
-    rules: []
+    rules: [no-promo]     # Strict no-promo community]
 
   - platform: reddit
     name: "r/SaaS"
     audience: ADJACENT
-    join_date: null
+    join_date: 2026-03-09
     priority: A
     rules: []             # SaaS communities allow direct-promotion
 
   - platform: reddit
     name: "r/microsaas"
     audience: ADJACENT
-    join_date: null
+    join_date: 2026-03-09
     priority: A
     rules: []
 
   - platform: reddit
     name: "r/indiehackers"
     audience: ADJACENT
-    join_date: null
+    join_date: 2026-03-09
     priority: A
     rules: []
 
   - platform: reddit
     name: "r/InteriorDesign"
     audience: HOMEOWNER
-    join_date: null
+    join_date: 2026-03-09
+    priority: B
+    rules: [no-promo]     # Strict no-promo community
+
+  - platform: reddit
+    name: "r/ExteriorDesign"
+    audience: HOMEOWNER
+    join_date: 2026-03-09
     priority: B
     rules: []
 
   - platform: reddit
     name: "r/HomeImprovement"
     audience: HOMEOWNER
-    join_date: null
+    join_date: 2026-03-09
+    priority: B
+    rules: []
+
+  - platform: reddit
+    name: "r/HomeImprovementIdeas"
+    audience: HOMEOWNER
+    join_date: 2026-03-09
     priority: B
     rules: []
 
   - platform: reddit
     name: "r/DIY"
     audience: HOMEOWNER
-    join_date: null
+    join_date: 2026-03-09
     priority: C
     rules: []
 
@@ -101,55 +115,69 @@ communities:
   - platform: facebook
     name: "Painting Contractors by DripJobs"
     audience: OWNER
-    join_date: null
+    join_date: 2026-03-09
     priority: A
     rules: []
 
   - platform: facebook
     name: "Painter Nation"
     audience: OWNER
-    join_date: null
+    join_date: 2026-03-09
     priority: A
     rules: []
 
   - platform: facebook
     name: "Painters Helping Painters"
     audience: OWNER
-    join_date: null
+    join_date: 2026-03-09
     priority: A
     rules: []
 
   - platform: facebook
     name: "Painting Business Pro"
     audience: OWNER
-    join_date: null
+    join_date: 2026-03-09
     priority: A
     rules: []
 
   - platform: facebook
-    name: "Painting Business Brainiacs"
+    name: "Painters Chat Space"
     audience: OWNER
-    join_date: null
-    priority: B
+    join_date: 2026-03-09
+    priority: A
+    rules: []
+
+  - platform: facebook
+    name: "Painters Chatroom: Powered By Pro Painter Digital"
+    audience: OWNER
+    join_date: 2026-03-09
+    priority: A
     rules: []
 
   - platform: facebook
     name: "Painter Growth Secrets"
     audience: OWNER
-    join_date: null
+    join_date: 2026-03-09
     priority: B
     rules: []
 
   - platform: facebook
     name: "Interior Design Community"
     audience: HOMEOWNER
-    join_date: null
+    join_date: 2026-03-09
     priority: B
     rules: []
 
   - platform: facebook
     name: "Home Renovation & Design Ideas"
     audience: HOMEOWNER
-    join_date: null
+    join_date: 2026-03-09
     priority: B
     rules: []
+
+  - platform: facebook
+    name: "Home Design & Decor"
+    audience: HOMEOWNER
+    join_date: 2026-03-09
+    priority: B
+    rules: [no-promo]     # Strict no-promo community
